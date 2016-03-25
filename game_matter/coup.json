@@ -1,0 +1,32 @@
+{
+  "name": "Coup",
+  "time": "short",
+  "players": {
+    "ideal": [3, 6],
+    "possible": [2, 6]
+  },
+  "complexity": {
+    "rules": "medium",
+    "meta": "high"
+  },
+  "overview": {
+    "basic": "You are head of a family in an Italian city-state, a city run by a weak and corrupt court. You need to manipulate, bluff and bribe your way to power. Your goal is to expose the cards of other players, until you alone hold a secret card.\n Each player receives two cards, each a character with certain abilities. You can claim to take any action, however, and it will always succeed... unless someone challenges you. Think fast and outmanoeuvre your opponents, or you'll find yourself watching from the sidelines of history."
+  },
+  "expansions": [
+    {
+      "name": "Reformation",
+      "time": "short",
+      "players": {
+        "ideal": [4, 6],
+        "possible": [2, 10]
+      },
+      "complexity": {
+        "rules": "medium",
+        "meta": "high"
+      },
+      "overview": {
+        "basic": "With the arrival of the inquisition, sides have been drawn, and uneasy alliances forged. In games of four players or more, each player picks a side, and works together to eliminate their foes... until the last foe falls, and the in-fighting begins.\n New team mechanics prevent players from targetting one another if a common enemy remains, but money can buy all things, and so alliances can change in a heartbeat. The new Inquisitor card allows you to inspect and replace another player's card, among other actions, adding new ways to outmanoeuvre your foes."
+      }
+    }
+  ]
+}
