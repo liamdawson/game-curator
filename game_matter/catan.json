@@ -16,8 +16,8 @@
     "name": "5–6 Player Expansion",
     "time": "long",
     "players": {
-      "ideal": [4, 4],
-      "possible": [3, 4]
+      "ideal": [4, 6],
+      "possible": [3, 6]
     },
     "complexity": {
       "rules": "high",
