@@ -1,0 +1,15 @@
+{
+  "name": "Ticket to Ride — Europe",
+  "time": "long",
+  "players": {
+    "ideal": [3, 5],
+    "possible": [2, 5]
+  },
+  "complexity": {
+    "rules": "low",
+    "meta": "medium"
+  },
+  "overview": {
+    "basic": "Ticket to Ride: Europe takes you on a train adventure across Europe. From Edinburgh to Constantinople and from Lisbon to Moscow, you'll visit great cities of turn-of-the-century Europe.\nCollect and play train cards to link cities and finish your tickets — completed tickets are worth bonus points, but incomplete tickets lose you points! Outsmart your rivals, and build a grand rail network to become the most influential rail magnate in Europe."
+  }
+}
