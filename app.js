@@ -5,7 +5,7 @@ const Koa = require('koa'),
       path = require('path'),
       bodyParser = require('koa-bodyparser'),
       _ = require('lodash'),
-      gameMatterDir = "game_matter";
+      gameMatterDir = "games";
 
 var app = new Koa();
 app.use(require('koa-static')('./public/'));
