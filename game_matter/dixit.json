@@ -1,0 +1,15 @@
+{
+  "name": "Dixit",
+  "time": "medium",
+  "players": {
+    "ideal": [4, 6],
+    "possible": [3, 6]
+  },
+  "complexity": {
+    "rules": "low",
+    "meta": "low"
+  },
+  "overview": {
+    "basic": "Dixit challenges players to tell a story from a single picture, with strange and fantastic worlds and images to explore.\nEach turn, a 'storyteller' chooses a card from the six in their hand, and gives the group a verbal clue. Everyone else contributes a card from their hand, all are shuffled, and everyone guesses which was the original card. Points are awarded to the storyteller if some, but not all, players guess the original card — so be careful not to be too obvious... but don't be too vague either!"
+  }
+}
