@@ -1,0 +1,15 @@
+{
+  "name": "Sheriff of Nottingham",
+  "time": "long",
+  "players": {
+    "ideal": [3, 5],
+    "possible": [3, 5]
+  },
+  "complexity": {
+    "rules": "medium",
+    "meta": "medium"
+  },
+  "overview": {
+    "basic": "Prince John is coming to Nottingham! Merchants see this as an opportunity to make quick profits by selling goods in the bustling city during the Prince's visit. However, players must first get their goods through the city gate, which is under the watch of the Sheriff of Nottingham. Should you play it safe with legal goods and make a profit, or risk it all by sneaking in illicit goods? Be mindful, though, as the Sheriff always has his eyes out for liars and tricksters and if he catches one, he very well may confiscate those goods for himself!\nDraw cards from the deck or discard piles, and build a package to ship past the player who is Sheriff for the turn. Declare your goods, put them in a sealed pouch, and wait for the Sheriff to decide your fate — if he inspects the package and it matches your declaration, he pays you for the inconvience. If you were lying, however, you pay him, and he confiscates the goods! Will you play it safe, or will you try to grease a few palms to keep the contraband moving? Either way, you'd better have a good reason for importing that crossbow shaped bread!"
+  }
+}
