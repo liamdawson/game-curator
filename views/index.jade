@@ -10,7 +10,7 @@ block content
           =game.name
         if game.expansions
           each expansion, expansionIndex in game.expansions
-            label
+            label.expansion
               input(type="checkbox", name="expansions[g"+index+"]", value=expansionIndex)
-              = game.name + "—" + expansion.name 
+              = game.name + ": " + expansion.name 
     input(type="submit", value="Generate booklet")
