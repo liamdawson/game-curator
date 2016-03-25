@@ -1,0 +1,15 @@
+{
+  "name": "game-exhibitor",
+  "version": "1.0.0",
+  "description": "Generate an exhibition booklet of your board games for game nights.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/nodemon app.js"
+  },
+  "author": "Liam Dawson <liam@liamdawson.me>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}
