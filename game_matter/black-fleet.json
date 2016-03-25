@@ -1,0 +1,15 @@
+{
+  "name": "Black Fleet",
+  "time": "long",
+  "players": {
+    "ideal": [4, 4],
+    "possible": [3, 4]
+  },
+  "complexity": {
+    "rules": "medium",
+    "meta": "high"
+  },
+  "overview": {
+    "basic": "Everyone wants glory on the high seas, and what better way than to rescue the governor's daughter? Control a navy ship, a merchant and a pirate to harass your foes, and protect your own interests, upgrade your ships, and ultimately pay the ransom to rescue the governor's daughter!"
+  }
+}
