@@ -1,18 +1,16 @@
-doctype html
-html(lang="en")
-  head
-    title Page!
-  body
-    h1 Game Curator
-    form(action="/generate", method="post")
-      each game, index in games
-        p
-          label
-            input(type="checkbox", name="games", value=index)
-            =game.name
-          if game.expansions
-            each expansion, expansionIndex in game.expansions
-              label
-                input(type="checkbox", name="expansions[g"+index+"]", value=expansionIndex)
-                = game.name + "—" + expansion.name 
-      input(type="submit", value="Generate booklet")
+extends ./layout.jade
+
+block content
+  h1 Game Curator
+  form(action="/generate", method="post")
+    each game, index in games
+      p
+        label
+          input(type="checkbox", name="games", value=index)
+          =game.name
+        if game.expansions
+          each expansion, expansionIndex in game.expansions
+            label
+              input(type="checkbox", name="expansions[g"+index+"]", value=expansionIndex)
+              = game.name + "—" + expansion.name 
+    input(type="submit", value="Generate booklet")

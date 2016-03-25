@@ -8,6 +8,7 @@ const Koa = require('koa'),
       gameMatterDir = "game_matter";
 
 var app = new Koa();
+app.use(require('koa-static')('./public/'));
 app.use(bodyParser({multipart: true}));
 var jadeware = new KoaJade({
   viewPath: "./views",
