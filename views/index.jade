@@ -10,3 +10,8 @@ html(lang="en")
           label
             input(type="checkbox")
             =game.name
+          if game.expansions
+            each expansion in game.expansions
+              label
+                input(type="checkbox")
+                = game.name + "—" + expansion.name 
