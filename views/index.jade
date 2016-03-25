@@ -4,14 +4,15 @@ html(lang="en")
     title Page!
   body
     h1 Game Curator
-    form
-      each game in games
+    form(action="/generate", method="post")
+      each game, index in games
         p
           label
-            input(type="checkbox")
+            input(type="checkbox", name="games", value=index)
             =game.name
           if game.expansions
-            each expansion in game.expansions
+            each expansion, expansionIndex in game.expansions
               label
-                input(type="checkbox")
+                input(type="checkbox", name="expansions[g"+index+"]", value=expansionIndex)
                 = game.name + "—" + expansion.name 
+      input(type="submit", value="Generate booklet")

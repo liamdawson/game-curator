@@ -3,14 +3,18 @@ const Koa = require('koa'),
       KoaJade = require('koa-jade'),
       fs = require('fs-promise'),
       path = require('path'),
+      bodyParser = require('koa-bodyparser'),
+      _ = require('lodash'),
       gameMatterDir = "game_matter";
 
 var app = new Koa();
+app.use(bodyParser({multipart: true}));
 var jadeware = new KoaJade({
   viewPath: "./views",
   debug: true,
   pretty: true,
   noCache: true,
+  compileDebug: true,
   app: app
 });
 
@@ -31,6 +35,16 @@ function runServer(games) {
 
   app.use(new Router().get('/', function*() {
     this.render('index');
+  }).post('/generate', function*() {
+    var requestedGames = [].concat(this.request.body.games).map((id) => _.merge({id: id}, games[parseInt(id)]));
+    Object.keys((this.request.body.expansions || {})).forEach((key) => {
+      intKey = parseInt(key.substring(1, key.length));
+      requestedGames.filter((g) => g.id == intKey)[0].expansions = [];
+      [].concat(this.request.body.expansions[key]).forEach((expansionId) => {
+        requestedGames.filter((g) => g.id == intKey)[0].expansions.push(games[intKey].expansions[expansionId]);
+      });
+    })
+    this.render('generate', {requestedGames: requestedGames});
   }).middleware());
 
   app.listen(3000);
