@@ -1,5 +1,7 @@
 # Game Curator
 
+[![GitHub license](https://img.shields.io/github/license/game-curator/game-curator.svg?style=flat-square)](https://github.com/game-curator/game-curator/blob/master/LICENSE.md)
+[![](https://img.shields.io/github/issues-raw/game-curator/game-curator.svg?style=flat-square)](https://github.com/game-curator/game-curator/issues)
 [![Travis](https://img.shields.io/travis/game-curator/game-curator.svg?style=flat-square)](https://travis-ci.org/game-curator/game-curator)
 [![Dependency Status](https://www.versioneye.com/user/projects/56f6452935630e0029db0928/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56f6452935630e0029db0928)
 
