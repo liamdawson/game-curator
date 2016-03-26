@@ -39,15 +39,11 @@ div.game p.meta {
   margin-bottom: 1ex;
 }
 
-div.game div.overviews div.basic {
-
-}
-
-div.expansion-meta {
-
-}
-
 label.expansion {
   display: block;
   margin-left: 1em;
+}
+
+div.game {
+  page-break-inside:avoid;
 }
