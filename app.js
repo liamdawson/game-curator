@@ -8,7 +8,9 @@ const Koa = require('koa'),
       gameMatterDir = "games",
       GA_UA = process.env.GA_UA;
 
-var app = new Koa();
+
+let app = new Koa(); //use let instead of var to notify that this object could change
+app.use(require('koa-less')('./public/'));
 app.use(require('koa-static')('./public/'));
 app.use(bodyParser({multipart: true}));
 var jadeware = new KoaJade({

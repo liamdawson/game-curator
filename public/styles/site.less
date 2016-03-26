@@ -19,31 +19,28 @@ h1, h2, h3, h4, h5, h6 {
 
 div.game {
   padding-bottom: 2ex;
-}
+  page-break-inside:avoid;
 
-div.game h1.title, div.expansion h2.title {
-  margin-bottom: 0;
+  h1.title, div.expansion h2.title {
+    margin-bottom: 0;
+  }
+
+  p.players {
+    margin-top: 0;
+    margin-bottom: 1ex;
+  }
+
+  p.meta {
+    margin-top: 0;
+    margin-bottom: 1ex;
+  }
 }
 
 p.meta {
   font-size: 85%
 }
 
-div.game p.players {
-  margin-top: 0;
-  margin-bottom: 1ex;
-}
-
-div.game p.meta {
-  margin-top: 0;
-  margin-bottom: 1ex;
-}
-
 label.expansion {
   display: block;
   margin-left: 1em;
-}
-
-div.game {
-  page-break-inside:avoid;
 }
