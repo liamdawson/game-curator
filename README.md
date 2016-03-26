@@ -21,3 +21,4 @@ Small app to put together a booklet of available board games for visitors.
 Thanks to:
 * @eamq
 * @jgimbel
+* @CallumKerrEdwards
