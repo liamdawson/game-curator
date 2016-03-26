@@ -32,8 +32,8 @@
       "name": "In the Lab",
       "time": "long",
       "players": {
-        "ideal": [2, 5],
-        "possible": [2, 5]
+        "ideal": [1, 6],
+        "possible": [1, 6]
       },
       "complexity": {
         "rules": "medium",
@@ -47,8 +47,8 @@
       "name": "State of Emergency",
       "time": "long",
       "players": {
-        "ideal": [2, 5],
-        "possible": [2, 5]
+        "ideal": [2, 4],
+        "possible": [2, 4]
       },
       "complexity": {
         "rules": "medium",
