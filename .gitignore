@@ -38,4 +38,4 @@ jspm_packages
 .node_repl_history
 
 # Ignore compiled less in public folder
-./public/styles/*.css
+public/styles/*.css
