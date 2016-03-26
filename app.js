@@ -43,8 +43,10 @@ function runServer(games) {
       var gameKey = parseInt(key.substring(1, key.length));
       var expansionKeys = this.request.body.expansions[key];
       Object.keys((expansionKeys || {})).forEach((expansionIndex) => {
-        requestedGames.filter((g) => g.id == gameKey)[0].expansions.push(
-          games[gameKey].expansions[expansionKeys[expansionIndex]]);
+        requestedGame = requestedGames.filter((g) => g.id == gameKey)[0]
+        if (requestedGame != null) {
+          requestedGame.expansions.push(games[gameKey].expansions[expansionKeys[expansionIndex]]);
+        }
       });
     })
     this.render('generate', {requestedGames: requestedGames});
