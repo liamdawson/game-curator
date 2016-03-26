@@ -10,3 +10,7 @@ Hacked together in a night — don't expect pretty. :)
 ## Sample Output
 
 ![Sample output](sample.png)
+
+## Contributors
+
+Thanks to @eamq!
