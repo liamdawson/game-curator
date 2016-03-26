@@ -1,0 +1,15 @@
+{
+  "name": "Taboo",
+  "time": "short",
+  "players": {
+    "ideal": [4, 10],
+    "possible": [4, 10]
+  },
+  "complexity": {
+    "rules": "low",
+    "meta": "medium"
+  },
+  "overview": {
+    "basic": "Taboo is a party word game. Players take turns describing a word or phrase on a drawn card to their partner without using five common additional words or phrases also on the card. The opposing partners watch a timer and use a buzzer to stop the game, buzz the player describing if one of the five off limits words or phrases is used, or the describing player makes any gestures. The describing team gets a point for each card they guess successfully and the opposing team gets a point for each card they pass on, make gestures on, or lose for saying one of the off limits words or phrases. An excellent party game!"
+  }
+}

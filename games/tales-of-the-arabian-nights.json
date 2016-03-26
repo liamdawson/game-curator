@@ -1,0 +1,15 @@
+{
+  "name": "Tales of the Arabian Nights",
+  "time": "long",
+  "players": {
+    "ideal": [2, 4],
+    "possible": [1, 6]
+  },
+  "complexity": {
+    "rules": "high",
+    "meta": "low"
+  },
+  "overview": {
+    "basic": "Inn Tales of the Arabian Nights, you are the hero or heroine in a story of adventure and wonder just like those told by Scheherazade to her spellbound sultan! You will travel the land seeking your own destiny and fortune. You will learn stories and gain wisdom to share with others. Will you be the first to fulfill your destiny? The next Tale is yours to tell! There is, of course, a winner in Tales of the Arabian Nights, but the point of the game is less to see who wins and more to enjoy the unfolding and telling of a great story!"
+  }
+}

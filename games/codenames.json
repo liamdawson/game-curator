@@ -1,0 +1,15 @@
+{
+  "name": "Codenames",
+  "time": "short",
+  "players": {
+    "ideal": [4, 8],
+    "possible": [2, 8]
+  },
+  "complexity": {
+    "rules": "low",
+    "meta": "high"
+  },
+  "overview": {
+    "basic": "Two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their CODENAMES.\n In Codenames, two teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin.\n Codenames: Win or lose, it's fun to figure out the clues."
+  }
+}

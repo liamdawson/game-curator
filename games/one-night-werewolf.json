@@ -1,0 +1,15 @@
+{
+  "name": "One Night Werewolf",
+  "time": "very short",
+  "players": {
+    "ideal": [4, 6],
+    "possible": [3, 7]
+  },
+  "complexity": {
+    "rules": "low",
+    "meta": "medium"
+  },
+  "overview": {
+    "basic": "In One Night Werewolf, a simplified version of Werewolf, there is a single night phase and a single day phase. As in werewolf, players are dealt roles which are kept hidden for the duration of the game. During the night phase, players who have the Sorcerer, the Werewolves, and the Phantom Thief each wake up and perform their special action for 10 seconds. During the day phase, players discuss who the werewolves are (or if there even are werewolves). Then all players vote simultaneously for a player. The player with the most votes is killed. If at least one werewolf is killed, the Human team wins. If no werewolf is killed, the Werewolf team wins."
+  }
+}
