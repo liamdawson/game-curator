@@ -49,7 +49,7 @@ function runServer(games) {
           {},                                                //create new object to assign key/value pairs
           games[GameIndex],                                  //use the game form file as the base for our game values
           {
-            expansions: (game.expansions || []).map(expansion => (        //set the expansions that were selected
+            expansions: (game.expansions || []).map(expansion => (            //set the expansions that were selected
               games[GameIndex].expansions.find((_, idx) => idx == expansion ) //find which expansions should be added.
             ))
           }
