@@ -5,7 +5,8 @@ const Koa = require('koa'),
       fs = require('fs-promise'),
       path = require('path'),
       bodyParser = require('koa-bodyparser'),
-      gameMatterDir = "games";
+      gameMatterDir = "games",
+      GA_UA = process.env.GA_UA;
 
 let app = new Koa(); //use let instead of var to notify that this object could change
 app.use(require('koa-static')('./public/'));
@@ -38,6 +39,7 @@ fs
 
 function runServer(games) {
   jadeware.locals.games = games;
+  jadeware.locals.GA_UA = GA_UA;
 
   app.use(new Router()
     .get('/', function*() {
