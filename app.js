@@ -5,7 +5,8 @@ const Koa = require('koa'),
       path = require('path'),
       bodyParser = require('koa-bodyparser'),
       _ = require('lodash'),
-      gameMatterDir = "games";
+      gameMatterDir = "games",
+      GA_UA = process.env.GA_UA;
 
 var app = new Koa();
 app.use(require('koa-static')('./public/'));
@@ -33,6 +34,7 @@ fs.readdir(gameMatterDir).then((files) => files.map((file) => fs.readJson(path.j
 
 function runServer(games) {
   jadeware.locals.games = games;
+  jadeware.locals.GA_UA = GA_UA;
 
   app.use(new Router().get('/', function*() {
     this.render('index');
