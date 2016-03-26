@@ -6,11 +6,11 @@ block content
     each game, index in games
       p
         label
-          input(type="checkbox", name="games", value=index)
+          input(type="checkbox", name="games["+index+"][id]", value=index)
           =game.name
         if game.expansions
           each expansion, expansionIndex in game.expansions
             label.expansion
-              input(type="checkbox", name="expansions[g"+index+"]", value=expansionIndex)
+              input(type="checkbox", name="games["+index+"][expansions]["+expansionIndex+"]", value=expansionIndex)
               = game.name + ": " + expansion.name 
     input(type="submit", value="Generate booklet")
