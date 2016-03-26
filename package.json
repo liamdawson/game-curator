@@ -7,7 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/nodemon app.js"
   },
+  "repository": "https://github.com/liamdawson/game-curator.git",
   "author": "Liam Dawson <liam@liamdawson.me>",
+  "contributors": [
+    "Joel Gimbel <jgimbel@live.com>",
+    "Eamonn Comerford <eamonn.r.c@gmail.com>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.9.1"
