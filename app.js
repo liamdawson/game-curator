@@ -39,7 +39,7 @@ function runServer(games) {
   app.use(new Router().get('/', function*() {
     this.render('index');
   }).post('/generate', function*() {
-    var requestedGames = [].concat(this.request.body.games).map((id) => _.merge({id: id}, games[parseInt(id)]));
+    var requestedGames = [].concat(this.request.body.games || []).map((id) => _.merge({id: id}, games[parseInt(id)]));
     requestedGames.forEach((game) => game.expansions = []);
     Object.keys((this.request.body.expansions || {})).forEach((key) => {
       var gameKey = parseInt(key.substring(1, key.length));
