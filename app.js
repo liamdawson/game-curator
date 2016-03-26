@@ -45,16 +45,13 @@ function runServer(games) {
     })
     .post('/generate', function*() {
       const requestedGames = (this.request.body.games || []) //don't trust that user sent any games at all
-        .map( (game, index) => Object.assign(                //use Object.assign instead of _.merge to make run times faster, and less deps.
+        .map( (game, GameIndex) => Object.assign(            //use Object.assign instead of _.merge to make run times faster, and less deps.
           {},                                                //create new object to assign key/value pairs
-          games[index],                                      //use the game form file as the base for our game values
+          games[GameIndex],                                  //use the game form file as the base for our game values
           {
-            expansions: (game.expansions || []).map(expansion => {                      //add the expansions chosen to the game.
-              console.log(games[index])
-              return games[index].expansions.find((_, idx) => (
-                idx == expansion
-              )) //find which expansions should be added.
-            })
+            expansions: (game.expansions || []).map(expansion => (        //set the expansions that were selected
+              games[GameIndex].expansions.find((_, idx) => idx == expansion ) //find which expansions should be added.
+            ))
           }
         ));
 
