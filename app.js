@@ -21,7 +21,7 @@ let jadeware = new KoaJade({
 
 fs
   .readdir(gameMatterDir) //read files from this directory
-  .then(files => ( 
+  .then(files => (
     files.map(file => fs.readJson(path.join(gameMatterDir, file))) //try to read json from files
   ))
   .catch(err => { //catch errors when reading json
@@ -29,7 +29,7 @@ fs
     process.exit(1);
   })
   .then(gamePromises => Promise.all(gamePromises)) //resolve reading promises
-  .catch(err => { //catch any errors when reading to json 
+  .catch(err => { //catch any errors when reading to json
     console.error(`Couldn't load a game matter file:\n${err.message}`);
     process.exit(2);
   })
@@ -44,18 +44,17 @@ function runServer(games) {
       this.render('index');
     })
     .post('/generate', function*() {
-      
       const requestedGames = (this.request.body.games || []) //don't trust that user sent any games at all
-        .map( game => Object.assign( //use Object.assign instead of _.merge to make run times faster, and less deps.
-          {}, //create new object to assign key/value pairs
-          games[parseInt(game.id)], //use the game form file as the base for our game values
+        .map( game => Object.assign(                         //use Object.assign instead of _.merge to make run times faster, and less deps.
+          {},                                                //create new object to assign key/value pairs
+          games[parseInt(game.id)],                          //use the game form file as the base for our game values
           {
-            expansions: (game.expansions || []).map(expansion => (  //add the expansions chosen to the game.
+            expansions: (game.expansions || []).map(expansion => (                      //add the expansions chosen to the game.
               games[parseInt(game.id)].expansions.find((_, idx) => idx === expansion ) //find which expansions should be added.
             ))
           }
         ));
-        
+
       this.render('generate', { requestedGames });
     })
     .middleware());
