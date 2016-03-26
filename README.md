@@ -1,6 +1,7 @@
 # Game Curator
 
 [![Travis](https://img.shields.io/travis/game-curator/game-curator.svg?style=flat-square)](https://travis-ci.org/game-curator/game-curator)
+[![Dependency Status](https://www.versioneye.com/user/projects/56f6452935630e0029db0928/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56f6452935630e0029db0928)
 
 > Latest release is running via free Heroku at https://game-curator.herokuapp.com/
 
