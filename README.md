@@ -15,4 +15,6 @@ Small app to put together a booklet of available board games for visitors.
 
 ## Contributors
 
-Thanks to @eamq!
+Thanks to:
+* @eamq
+* @jgimbel
