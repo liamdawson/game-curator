@@ -38,11 +38,13 @@ function runServer(games) {
     this.render('index');
   }).post('/generate', function*() {
     var requestedGames = [].concat(this.request.body.games).map((id) => _.merge({id: id}, games[parseInt(id)]));
+    requestedGames.forEach((game) => game.expansions = []);
     Object.keys((this.request.body.expansions || {})).forEach((key) => {
-      intKey = parseInt(key.substring(1, key.length));
-      requestedGames.filter((g) => g.id == intKey)[0].expansions = [];
-      [].concat(this.request.body.expansions[key]).forEach((expansionId) => {
-        requestedGames.filter((g) => g.id == intKey)[0].expansions.push(games[intKey].expansions[expansionId]);
+      var gameKey = parseInt(key.substring(1, key.length));
+      var expansionKeys = this.request.body.expansions[key];
+      Object.keys((expansionKeys || {})).forEach((expansionIndex) => {
+        requestedGames.filter((g) => g.id == gameKey)[0].expansions.push(
+          games[gameKey].expansions[expansionKeys[expansionIndex]]);
       });
     })
     this.render('generate', {requestedGames: requestedGames});
