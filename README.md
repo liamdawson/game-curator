@@ -1,4 +1,6 @@
-# Game Exhibitor
+# Game Curator
+
+[![Travis](https://img.shields.io/travis/game-curator/game-curator.svg?style=flat-square)](https://travis-ci.org/game-curator/game-curator)
 
 > Latest release is running via free Heroku at https://game-curator.herokuapp.com/
 
