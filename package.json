@@ -1,6 +1,6 @@
 {
   "name": "game-exhibitor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generate an exhibition booklet of your board games for game nights.",
   "main": "app.js",
   "scripts": {
@@ -19,7 +19,6 @@
     "koa-jade": "^2.1.0",
     "koa-less": "0.0.3",
     "koa-router": "^5.4.0",
-    "koa-static": "^2.0.0",
-    "lodash": "^4.6.1"
+    "koa-static": "^2.0.0"
   }
 }
