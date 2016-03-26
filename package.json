@@ -10,8 +10,14 @@
   "repository": "https://github.com/liamdawson/game-curator.git",
   "author": "Liam Dawson <liam@liamdawson.me>",
   "contributors": [
-    "Joel Gimbel <jgimbel@live.com>",
-    "Eamonn Comerford <eamonn.r.c@gmail.com>"
+    {
+      "name": "Eamonn Comerford",
+      "email": "eamonn.r.c@gmail.com"
+    },
+    {
+      "name": "Joel Gimbel",
+      "email": "jgimbel@live.com"
+    }
   ],
   "license": "ISC",
   "devDependencies": {

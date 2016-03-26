@@ -5,6 +5,7 @@ const Koa = require('koa'),
       fs = require('fs-promise'),
       path = require('path'),
       bodyParser = require('koa-bodyparser'),
+      packageObj = require('./package.json'),
       gameMatterDir = "games",
       GA_UA = process.env.GA_UA;
 
@@ -41,6 +42,7 @@ fs
 function runServer(games) {
   jadeware.locals.games = games;
   jadeware.locals.GA_UA = GA_UA;
+  jadeware.locals.packageObj = packageObj;
 
   app.use(new Router()
     .get('/', function*() {
