@@ -4,7 +4,7 @@
   "description": "Generate an exhibition booklet of your board games for game nights.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node_modules/.bin/nodemon app.js"
   },
   "author": "Liam Dawson <liam@liamdawson.me>",
@@ -13,6 +13,7 @@
     "nodemon": "^1.9.1"
   },
   "dependencies": {
+    "expect.js": "^0.3.1",
     "fs-promise": "^0.5.0",
     "koa": "^1.2.0",
     "koa-bodyparser": "^2.0.1",
