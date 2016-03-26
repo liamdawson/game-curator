@@ -25,16 +25,16 @@ fs
   .then(files => (
     files.map(file => fs.readJson(path.join(gameMatterDir, file))) //try to read json from files
   ))
-  .catch(err => { //catch errors when reading json
+  .catch(err => {                                                  //catch errors when reading json
     console.error(`Couldn't load game matter files:\n${err.message}`);
     process.exit(1);
   })
-  .then(gamePromises => Promise.all(gamePromises)) //resolve reading promises
-  .catch(err => { //catch any errors when reading to json
+  .then(gamePromises => Promise.all(gamePromises))                 //resolve reading promises
+  .catch(err => {                                                  //catch any errors when reading to json
     console.error(`Couldn't load a game matter file:\n${err.message}`);
     process.exit(2);
   })
-  .then(runServer) //after all reading is done, start the server
+  .then(runServer)                                                 //after all reading is done, start the server
 ;
 
 function runServer(games) {
