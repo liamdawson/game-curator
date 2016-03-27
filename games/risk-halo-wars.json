@@ -1,0 +1,20 @@
+{
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Risk: Halo Wars Collector's Edition",
+    "time": 4,
+    "players": {
+      "possible": [
+        3,
+        5
+      ]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "This Risk Halo Wars Game is a futuristic spin off of the classic game of strategy and diplomacy! Based on the Xbox video game Halo, you must battle and trick your opponents to obtain control of Arcadia. Is the world really yours for the taking or are you simply a pawn in your opponent's game plan? The ultimate battle of conquest is at your fingertips as you assume one of three armies, each with their own Halo-themed game pieces! Choose from commanding The Covenant, UNSC Forces, or The Flood in addition to three objectives and three ways to play for the ultimate gaming experience!"
+    }
+  }
+}
