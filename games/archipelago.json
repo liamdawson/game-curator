@@ -25,6 +25,10 @@
     {
       "name": "Solo Expansion",
       "players": {
+        "ideal": [
+          1,
+          1
+        ],
         "possible": [
           1,
           5
