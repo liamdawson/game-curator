@@ -1,18 +1,18 @@
 extends ./layout.jade
 
 block content
-  h1 Game Curator
+  p Select the games you want in your booklet:
   form(action="/generate", method="post")
-    each game, index in games
+    each gameObj, index in games
       p
         label
           input(type="checkbox", name='games[g'+index+'][id]', value=index)
-          =game.name
-        if game.expansions
-          each expansion, expansionIndex in game.expansions
+          =gameObj.game.name
+        if gameObj.expansions
+          each expansion, expansionIndex in gameObj.expansions
             label.expansion
               input(type="checkbox", name='games[g'+index+'][expansions]['+expansionIndex+']', value=expansionIndex)
-              = game.name + ": " + expansion.name 
+              = gameObj.game.name + ": " + expansion.name 
     input(type="submit", value="Generate booklet")
     
   div.footer
