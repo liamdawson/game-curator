@@ -1,15 +1,18 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Exploding Kittens",
-  "time": "medium",
+  "time": 3,
   "players": {
     "ideal": [3, 5],
     "possible": [2, 5]
   },
-  "complexity": {
-    "rules": "low",
-    "meta": "medium"
+  "difficulty": {
+    "rules": 2,
+    "strategy": 3
   },
   "overview": {
     "basic": "Who doesn't love kittens? I'm afraid some of these kittens don't love you back. In a game of reverse Russian Roulette, fight your friends and flummox your foes as you claw your way through the deck, and emerge the victor as the last person standing.\n Each player begins with 5 cards, you can play as many as you like on your turn, which ends when you draw a card. Be claw-tious, though, because if you draw an exploding kitten, you're out. Unless you can defuse it, which lets you put it wherever you want in the deck. Will you survive to the end, or will you fall before you can say \"Apocalypse Meow\"?"
   }
+}
 }
