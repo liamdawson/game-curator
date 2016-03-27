@@ -1,0 +1,54 @@
+{
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Archipelago",
+    "time": 5,
+    "players": {
+      "ideal": [
+        4,
+        5
+      ],
+      "possible": [
+        2,
+        5
+      ]
+    },
+    "difficulty": {
+      "rules": 4,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "In Archipelago, players are Renaissance European powers competing in the exploration of a Pacific or Caribbean archipelago. They will explore territories, harvest resources, use those resources in markets both internal (for their use and that of the natives) and foreign (to sell it in Europe), build markets, harbors, cities and temples, and negotiate among themselves (and maybe betray each other) – all this to complete their secret objectives. They will also need to guess the secret objective of the other players to be able to benefit from them.\n But players also need to be careful of the natives; if they make them too unhappy or if too many of them are unoccupied, they could revolt and declare independence. Then everyone will lose!"
+    }
+  },
+  "expansions": [
+    {
+      "name": "Solo Expansion",
+      "players": {
+        "possible": [
+          1,
+          5
+        ]
+      },
+      "overview": {
+        "basic": "This expansion includes 27 scenarios with different conditions and objectives and with you, the solo player, taking the part of characters such as Christopher Columbus, Robinson Crusoe, and the pirate Bluebeard. The playing time varies from 20 to 90 minutes depending on the scenario, and your score in the scenario – gold, silver, bronze, revolt – will depend on the number of rounds you took to achieve the objective."
+      }
+    },
+    {
+      "name": "War & Peace",
+      "players": {
+        "ideal": [
+          4,
+          5
+        ],
+        "possible": [
+          2,
+          5
+        ]
+      },
+      "overview": {
+        "basic": "After decades of exploration, disputes arise among the colonizing European nations over the discovered lands, resources and trade routes. Old-continent quarrels become new again in the colonies. At times, precarious moments of peace are maintained — until wars erupt again. Human greed is an eternal source of conflicts...\n This expansion introduces forty new evolution cards: twenty character and twenty progress cards. These cards — which can be combined with the base game or used as a complete replacement — are more aggressive, interactive and (sometimes) drastic than the original ones, covering the major themes of war, peace, and trade, among others."
+      }
+    }
+  ]
+}
