@@ -1,15 +1,18 @@
 {
-  "name": "Black Fleet",
-  "time": "long",
-  "players": {
-    "ideal": [4, 4],
-    "possible": [3, 4]
-  },
-  "complexity": {
-    "rules": "medium",
-    "meta": "high"
-  },
-  "overview": {
-    "basic": "Everyone wants glory on the high seas, and what better way than to rescue the governor's daughter? Control a navy ship, a merchant and a pirate to harass your foes, and protect your own interests, upgrade your ships, and ultimately pay the ransom to rescue the governor's daughter!"
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Black Fleet",
+    "time": 4,
+    "players": {
+      "ideal": [4, 4],
+      "possible": [3, 4]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "Everyone wants glory on the high seas, and what better way than to rescue the governor's daughter? Control a navy ship, a merchant and a pirate to harass your foes, and protect your own interests, upgrade your ships, and ultimately pay the ransom to rescue the governor's daughter!"
+    }
   }
 }
