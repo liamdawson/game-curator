@@ -1,2 +1,2 @@
 require('./games.js')
-//add more tests as they come up
+// add more tests as they come up
