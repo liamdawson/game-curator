@@ -4,7 +4,10 @@
     "name": "Carcassonne",
     "time": 4,
     "players": {
-      "possible": [2, 5]
+      "possible": [
+        2,
+        5
+      ]
     },
     "difficulty": {
       "rules": 3,
@@ -19,7 +22,10 @@
       "name": "Inns & Cathedrals",
       "time": 4,
       "players": {
-        "possible": [2, 6]
+        "possible": [
+          2,
+          6
+        ]
       },
       "overview": {
         "basic": "There's a new player in town, upping the player count to six. Also included are a number of unusual tiles, including tiles with the risky inns and cathedrals — a road with an inn attached, or a city containing a cathedral, is worth double the points... if you finish it. Fail to finish it, and you get nothing.\nFinally, there's a new follower added — the \"big meeple\" is worth two followers, so you might just be able to muscle someone else out of those hard-earned points!"

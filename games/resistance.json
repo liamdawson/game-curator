@@ -1,17 +1,20 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "The Resistance",
-  "time": 3,
-  "players": {
-    "possible": [5, 10]
-  },
-  "difficulty": {
-    "rules": 3,
-    "strategy": 5
-  },
-  "overview": {
-    "basic": "In a corrupt, futuristic world, a group of 5–10 saboteurs team up to bring down the self-serving government. Recent intelligence has suggested, however, that some of these saboteurs are secretly government loyalists. Who can you trust?\nThe Resistance pits a small number of secret defectors against the rest of the group, requiring them to fail missions without raising suspicion. Will you successfully topple the corrupt government, or will you ohm-erwhelm the resistance as the cunning spies?"
+    "name": "The Resistance",
+    "time": 3,
+    "players": {
+      "possible": [
+        5,
+        10
+      ]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 5
+    },
+    "overview": {
+      "basic": "In a corrupt, futuristic world, a group of 5–10 saboteurs team up to bring down the self-serving government. Recent intelligence has suggested, however, that some of these saboteurs are secretly government loyalists. Who can you trust?\nThe Resistance pits a small number of secret defectors against the rest of the group, requiring them to fail missions without raising suspicion. Will you successfully topple the corrupt government, or will you ohm-erwhelm the resistance as the cunning spies?"
+    }
   }
-}
 }

@@ -4,7 +4,10 @@
     "name": "Coup: Rebellion G54",
     "time": 2,
     "players": {
-      "possible": [3, 6]
+      "possible": [
+        3,
+        6
+      ]
     },
     "difficulty": {
       "rules": 3,

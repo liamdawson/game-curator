@@ -1,18 +1,24 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "Small World Underground",
-  "time": 3,
-  "players": {
-    "ideal": [3, 5],
-    "possible": [2, 5]
-  },
-  "difficulty": {
-    "rules": 2,
-    "strategy": 3
-  },
-  "overview": {
-    "basic": "\"This world's not big enough for all of us, so it's time you step aside to make room for me.\"\nLead fantastic and varied races across a large underground world, claim artifacts and places of power to trample your foes. Before long, though, your armies will be whittled down, and you will abandon them, and lead a new race!\nConquer and control regions on the board, take advantage of your race's powers, and claim the most points to become the undisputed ruler of the Small World."
+    "name": "Small World Underground",
+    "time": 3,
+    "players": {
+      "ideal": [
+        3,
+        5
+      ],
+      "possible": [
+        2,
+        5
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "\"This world's not big enough for all of us, so it's time you step aside to make room for me.\"\nLead fantastic and varied races across a large underground world, claim artifacts and places of power to trample your foes. Before long, though, your armies will be whittled down, and you will abandon them, and lead a new race!\nConquer and control regions on the board, take advantage of your race's powers, and claim the most points to become the undisputed ruler of the Small World."
+    }
   }
-}
 }

@@ -18,6 +18,16 @@ Small app to put together a booklet of available board games for visitors.
 3. Run `npm start` to start the application.
 4. Go to [http://localhost:3000](http://localhost:3000) to use the application.
 
+## Utility methods
+
+Format all of the game JSON files (assuming you're running a SH shell):
+
+    for file in $(ls games/*.json); do; node_modules/.bin/json -o json -I -f $file; done
+
+Format code to fit the project style:
+
+    node_modules/.bin/standard-format -w
+
 ## Contributors
 
 Thanks to:

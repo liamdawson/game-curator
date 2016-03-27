@@ -4,8 +4,14 @@
     "name": "Codenames",
     "time": 2,
     "players": {
-      "ideal": [4, 8],
-      "possible": [2, 8]
+      "ideal": [
+        4,
+        8
+      ],
+      "possible": [
+        2,
+        8
+      ]
     },
     "difficulty": {
       "rules": 2,

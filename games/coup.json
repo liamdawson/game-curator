@@ -1,26 +1,39 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "Coup",
-  "time": 2,
-  "players": {
-    "ideal": [3, 6],
-    "possible": [2, 6]
+    "name": "Coup",
+    "time": 2,
+    "players": {
+      "ideal": [
+        3,
+        6
+      ],
+      "possible": [
+        2,
+        6
+      ]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "You are head of a family in an Italian city-state, a city run by a weak and corrupt court. You need to manipulate, bluff and bribe your way to power. Your goal is to expose the cards of other players, until you alone hold a secret card.\n Each player receives two cards, each a character with certain abilities. You can claim to take any action, however, and it will always succeed... unless someone challenges you. Think fast and outmanoeuvre your opponents, or you'll find yourself watching from the sidelines of history."
+    }
   },
-  "difficulty": {
-    "rules": 3,
-    "strategy": 4
-  },
-  "overview": {
-    "basic": "You are head of a family in an Italian city-state, a city run by a weak and corrupt court. You need to manipulate, bluff and bribe your way to power. Your goal is to expose the cards of other players, until you alone hold a secret card.\n Each player receives two cards, each a character with certain abilities. You can claim to take any action, however, and it will always succeed... unless someone challenges you. Think fast and outmanoeuvre your opponents, or you'll find yourself watching from the sidelines of history."
-  }},
   "expansions": [
     {
       "name": "Reformation",
       "time": 2,
       "players": {
-        "ideal": [4, 6],
-        "possible": [2, 10]
+        "ideal": [
+          4,
+          6
+        ],
+        "possible": [
+          2,
+          10
+        ]
       },
       "difficulty": {
         "rules": 3,

@@ -1,17 +1,20 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "Five Tribes",
-  "time": 4,
-  "players": {
-    "possible": [2, 4]
-  },
-  "difficulty": {
-    "rules": 4,
-    "strategy": 4
-  },
-  "overview": {
-    "basic": "The Sultan of Naqala has just died, and his seat is vacant. The oracles foretold of strangers who would maneuvre the five tribes to gain influence over the legendary city-state. Invoke the old Djinns and move the Tribes into position, and the Sultanate may just be yours!\nBid to go first in a race to take the best moves. Carefully plot a course to move the tribes, claim lands for your own, and gain allies from the Assassins, Elders, Merchants, Builders and Viziers, and invoke mighty Djinns to your cause."
+    "name": "Five Tribes",
+    "time": 4,
+    "players": {
+      "possible": [
+        2,
+        4
+      ]
+    },
+    "difficulty": {
+      "rules": 4,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "The Sultan of Naqala has just died, and his seat is vacant. The oracles foretold of strangers who would maneuvre the five tribes to gain influence over the legendary city-state. Invoke the old Djinns and move the Tribes into position, and the Sultanate may just be yours!\nBid to go first in a race to take the best moves. Carefully plot a course to move the tribes, claim lands for your own, and gain allies from the Assassins, Elders, Merchants, Builders and Viziers, and invoke mighty Djinns to your cause."
+    }
   }
-}
 }

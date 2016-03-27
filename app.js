@@ -63,7 +63,7 @@ function runServer (games) {
           }
         ))
 
-      this.render('generate', { requestedGames })
+      this.render('generate', {requestedGames})
     })
     .middleware())
 

@@ -1,18 +1,24 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "Pictionary",
-  "time": 3,
-  "players": {
-    "ideal": [6, 8],
-    "possible": [3, 16]
-  },
-  "difficulty": {
-    "rules": 2,
-    "strategy": 4
-  },
-  "overview": {
-	"basic" : "Playing Pictionary may remind you of Charades, but with drawing on paper instead of acting out the answers. In Pictionary, though, both teams' clue givers may be drawing at the same time as players strive to be the first to guess the correct answer. When the answer is not designated \"All Play,\" one team simply tries to come up with the answer before the timer runs out.\n No great drawing talent is required; instead, players gain an edge if they have a good imagination when guessing, empathy for their team mates, and/or a general ability to communicate in restricted circumstances."
-	}
-}
+    "name": "Pictionary",
+    "time": 3,
+    "players": {
+      "ideal": [
+        6,
+        8
+      ],
+      "possible": [
+        3,
+        16
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "Playing Pictionary may remind you of Charades, but with drawing on paper instead of acting out the answers. In Pictionary, though, both teams' clue givers may be drawing at the same time as players strive to be the first to guess the correct answer. When the answer is not designated \"All Play,\" one team simply tries to come up with the answer before the timer runs out.\n No great drawing talent is required; instead, players gain an edge if they have a good imagination when guessing, empathy for their team mates, and/or a general ability to communicate in restricted circumstances."
+    }
+  }
 }

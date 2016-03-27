@@ -1,23 +1,30 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "Pandemic",
-  "time": 4,
-  "players": {
-    "possible": [2, 4]
+    "name": "Pandemic",
+    "time": 4,
+    "players": {
+      "possible": [
+        2,
+        4
+      ]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "Can you save humanity in this cooperative game where deadly viruses are spreading across the globe? Together, you will treat diseases, share knowledge, and fly all over the world to prevent outbreaks and slow down the epidemic. The fate of humanity is in your hands!"
+    }
   },
-  "difficulty": {
-    "rules": 3,
-    "strategy": 3
-  },
-  "overview": {
-    "basic": "Can you save humanity in this cooperative game where deadly viruses are spreading across the globe? Together, you will treat diseases, share knowledge, and fly all over the world to prevent outbreaks and slow down the epidemic. The fate of humanity is in your hands!"
-  }},
   "expansions": [
     {
       "name": "On the Brink",
       "players": {
-        "possible": [2, 5]
+        "possible": [
+          2,
+          5
+        ]
       },
       "overview": {
         "basic": "Has saving humanity become routine? Spice Pandemic up with new roles and events. Add a fifth player, try Legendary difficulty, or add an optional challenge: What if one disease is particularly nasty? Or, if a fifth disease is wreaking havoc? Or, even worse, if that fifth disease is being spread by a hidden Bio-Terrorist? Can your team work together to cure diseases in a world on the brink of disaster?"
@@ -26,7 +33,10 @@
     {
       "name": "In the Lab",
       "players": {
-        "possible": [1, 6]
+        "possible": [
+          1,
+          6
+        ]
       },
       "overview": {
         "basic": "Behind sealed bio-hazard doors, scientists race against time to sequence diseases and test cures. Take samples and develop cures in the Lab challenge! Play on your own or as rival teams (for 4 or 6 players)! Extend the On the Brink challenges with new Virulent Strain Events or the Worldwide Panic Mutation scenario. Can your team work together in the lab to save humanity?"

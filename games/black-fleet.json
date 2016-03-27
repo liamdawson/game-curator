@@ -4,8 +4,14 @@
     "name": "Black Fleet",
     "time": 4,
     "players": {
-      "ideal": [4, 4],
-      "possible": [3, 4]
+      "ideal": [
+        4,
+        4
+      ],
+      "possible": [
+        3,
+        4
+      ]
     },
     "difficulty": {
       "rules": 3,

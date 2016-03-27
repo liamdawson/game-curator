@@ -4,8 +4,14 @@
     "name": "7 Wonders",
     "time": 3,
     "players": {
-      "ideal": [3, 7],
-      "possible": [2, 7]
+      "ideal": [
+        3,
+        7
+      ],
+      "possible": [
+        2,
+        7
+      ]
     },
     "difficulty": {
       "rules": 3,

@@ -4,8 +4,14 @@
     "name": "Council of Verona",
     "time": 3,
     "players": {
-      "ideal": [3, 4],
-      "possible": [2, 5]
+      "ideal": [
+        3,
+        4
+      ],
+      "possible": [
+        2,
+        5
+      ]
     },
     "difficulty": {
       "rules": 2,

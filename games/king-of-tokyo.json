@@ -1,19 +1,26 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "King of Tokyo",
-  "time": 2,
-  "players": {
-    "ideal": [4, 5],
-    "possible": [2, 6]
+    "name": "King of Tokyo",
+    "time": 2,
+    "players": {
+      "ideal": [
+        4,
+        5
+      ],
+      "possible": [
+        2,
+        6
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 2
+    },
+    "overview": {
+      "basic": "In King of Tokyo, you play mutant monsters, gigantic robots, and strange aliens—all of whom are destroying Tokyo and whacking each other in order to become the one and only King of Tokyo. \n The fiercest player will occupy Tokyo, and earn extra victory points, but that player can't heal and must face all the other monsters alone! In order to win the game, one must either destroy Tokyo by accumulating 20 victory points, or be the only surviving monster once the fighting has ended."
+    }
   },
-  "difficulty": {
-    "rules": 2,
-    "strategy": 2
-  },
-  "overview": {
-    "basic": "In King of Tokyo, you play mutant monsters, gigantic robots, and strange aliens—all of whom are destroying Tokyo and whacking each other in order to become the one and only King of Tokyo. \n The fiercest player will occupy Tokyo, and earn extra victory points, but that player can't heal and must face all the other monsters alone! In order to win the game, one must either destroy Tokyo by accumulating 20 victory points, or be the only surviving monster once the fighting has ended."
-  }},
   "expansions": [
     {
       "name": "Power Up!",

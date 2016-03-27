@@ -4,8 +4,14 @@
     "name": "Concept",
     "time": 3,
     "players": {
-      "ideal": [6, 12],
-      "possible": [4, 12]
+      "ideal": [
+        6,
+        12
+      ],
+      "possible": [
+        4,
+        12
+      ]
     },
     "difficulty": {
       "rules": 2,

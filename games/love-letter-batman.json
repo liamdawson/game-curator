@@ -1,18 +1,24 @@
 {
   "gameSchemaVersion": 1,
   "game": {
-  "name": "Love Letter — Batman Edition",
-  "time": 1,
-  "players": {
-    "ideal": [3, 4],
-    "possible": [2, 4]
-  },
-  "difficulty": {
-    "rules": 2,
-    "strategy": 3
-  },
-  "overview": {
-    "basic": "The most notorious villains in Gotham City have escaped Arkham Asylum and it’s up to the Dark Knight to round them up and return them to their padded cells.\n Each player holds a secret card, and on their turn, draws another, choosing to discard one and play its effect. Be quick, though, because with only 15 cards in the game, it won't be long before the showdown begins!"
+    "name": "Love Letter — Batman Edition",
+    "time": 1,
+    "players": {
+      "ideal": [
+        3,
+        4
+      ],
+      "possible": [
+        2,
+        4
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "The most notorious villains in Gotham City have escaped Arkham Asylum and it’s up to the Dark Knight to round them up and return them to their padded cells.\n Each player holds a secret card, and on their turn, draws another, choosing to discard one and play its effect. Be quick, though, because with only 15 cards in the game, it won't be long before the showdown begins!"
+    }
   }
-}
 }
