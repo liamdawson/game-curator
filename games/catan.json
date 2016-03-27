@@ -1,27 +1,25 @@
 {
-  "name": "Catan",
-  "time": "long",
-  "players": {
-    "ideal": [4, 4],
-    "possible": [3, 4]
-  },
-  "complexity": {
-    "rules": "high",
-    "meta": "high"
-  },
-  "overview": {
-    "basic": "The resource-rich island of Catan is a hotly contested region, and you lead one of the recently settled colonies. Build, trade and settle to gain the resources you need to expand and develop.\nWith developments that advance your way to victory and settlements to build, there is no shortage of ways to move towards victory, but be wise when trading — you might just give your opponent the tools of your own downfall... Claim the longest road, biggest army, and develop your settlements and civilization to become the Lord of Catan."
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Catan",
+    "time": 4,
+    "players": {
+      "ideal": [4, 4],
+      "possible": [3, 4]
+    },
+    "difficulty": {
+      "rules": 4,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "The resource-rich island of Catan is a hotly contested region, and you lead one of the recently settled colonies. Build, trade and settle to gain the resources you need to expand and develop.\nWith developments that advance your way to victory and settlements to build, there is no shortage of ways to move towards victory, but be wise when trading — you might just give your opponent the tools of your own downfall... Claim the longest road, biggest army, and develop your settlements and civilization to become the Lord of Catan."
+    }
   },
   "expansions": [{
     "name": "5–6 Player Expansion",
-    "time": "long",
     "players": {
       "ideal": [4, 6],
       "possible": [3, 6]
-    },
-    "complexity": {
-      "rules": "high",
-      "meta": "high"
     },
     "overview": {
       "basic": "This expansion adds another two settlers, new terrain and developments, to allow a 5th and 6th player to join the game."
