@@ -44,6 +44,8 @@ function runServer (games) {
   jadeware.locals.games = games
   jadeware.locals.GA_UA = GA_UA
   jadeware.locals.packageObj = packageObj
+  jadeware.locals.difficultyScale = ['unused', 'very easy', 'easy', 'medium', 'hard', 'very hard']
+  jadeware.locals.timeScale = ['unused', 'very short', 'short', 'medium', 'long', 'very long']
 
   app.use(new Router()
     .get('/', function * () {
@@ -55,10 +57,10 @@ function runServer (games) {
         .keys(reqGames || {}) // don't trust that user sent any games at all
         .map((gameIndex) => Object.assign( // use Object.assign instead of _.merge to make run times faster, and less deps.
           {}, // create new object to assign key/value pairs
-          games[parseInt(gameIndex.substring(1))], // use the game from file as the base for our game values
+          games[parseInt(gameIndex.substring(1))].game, // use the game from file as the base for our game values
           {
             expansions: (reqGames[gameIndex].expansions || []).map((expansion) => ( // set the expansions that were selected
-            games[parseInt(gameIndex.substring(1))].expansions.find((_, idx) => idx === expansion) // find which expansions should be added.
+            games[parseInt(gameIndex.substring(1))].expansions.find((_, idx) => idx.toString() === expansion) // find which expansions should be added.
             ))
           }
         ))

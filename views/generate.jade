@@ -6,7 +6,11 @@ block content
       div.game
         div.game-meta
           h1.title= game.name
-          p.meta= game.players.possible[0] + " to " + game.players.possible[1] + " players (" + game.players.ideal[0] + " to " + game.players.ideal[1] + " preferred), " + "game length: " + game.time + ", rule difficulty: " + game.complexity.rules + ", strategy difficulty: " + game.complexity.meta + "."
+          p.meta
+            = game.players.possible[0] + " to " + game.players.possible[1] + " players"
+            if game.players.ideal
+              = " (" + game.players.ideal[0] + " to " + game.players.ideal[1] + " preferred)"
+            = ", " + "game length: " + timeScale[game.time] + ", rule difficulty: " + difficultyScale[game.difficulty.rules] + ", strategy difficulty: " + difficultyScale[game.difficulty.strategy] + "."
         
         div.overviews
           div.basic
@@ -19,7 +23,13 @@ block content
               div.expansion
                 div.expansion-meta
                   h2.title= game.name + ": " + expansion.name
-                  p.meta= expansion.players.possible[0] + " to " + expansion.players.possible[1] + " players (" + expansion.players.ideal[0] + " to " + expansion.players.ideal[1] + " preferred), " + "game length: " + expansion.time + ", rule difficulty: " + expansion.complexity.rules + ", strategy difficulty: " + expansion.complexity.meta + "."
+                  p.meta
+                    = (expansion.players || game.players).possible[0] + " to " + (expansion.players || game.players).possible[1] + " players"
+                    if expansion.players && expansion.players.ideal
+                      = " (" + expansion.players.ideal[0] + " to " + expansion.players.ideal[1] + " preferred)"
+                    else if game.players.ideal
+                      = " (" + game.players.ideal[0] + " to " + game.players.ideal[1] + " preferred)"
+                    = ", " + "game length: " + timeScale[(expansion.time || game.time)] + ", rule difficulty: " + difficultyScale[(expansion.difficulty || game.difficulty).rules] + ", strategy difficulty: " + difficultyScale[(expansion.difficulty || game.difficulty).strategy] + "."
                   
                 div.overviews
                   div.basic
