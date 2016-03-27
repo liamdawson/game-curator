@@ -1,74 +1,47 @@
 {
-  "name": "7 Wonders",
-  "time": "medium",
-  "players": {
-    "ideal": [3, 7],
-    "possible": [2, 7]
-  },
-  "complexity": {
-    "rules": "medium",
-    "meta": "medium"
-  },
-  "overview": {
-    "basic": "You are the leader of one of the 7 great cities of the Ancient World. Gather resources, develop commercial routes, and affirm your military supremacy. Build your city and erect an architectural wonder which will transcend future times.\n 7 Wonders lasts three ages. In each age, players receive seven cards from a particular deck, choose one of those cards, then pass the remainder to an adjacent player. Players reveal their cards simultaneously, paying resources if needed or collecting resources or interacting with other players in various ways. Each player then chooses another card from the deck they were passed, and the process repeats until players have six cards in play from that age. After three ages, the game ends."
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "7 Wonders",
+    "time": 3,
+    "players": {
+      "ideal": [
+        3,
+        7
+      ],
+      "possible": [
+        2,
+        7
+      ]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "You are the leader of one of the 7 great cities of the Ancient World. Gather resources, develop commercial routes, and affirm your military supremacy. Build your city and erect an architectural wonder which will transcend future times.\n 7 Wonders lasts three ages. In each age, players receive seven cards from a particular deck, choose one of those cards, then pass the remainder to an adjacent player. Players reveal their cards simultaneously, paying resources if needed or collecting resources or interacting with other players in various ways. Each player then chooses another card from the deck they were passed, and the process repeats until players have six cards in play from that age. After three ages, the game ends."
+    }
   },
   "expansions": [
     {
       "name": "Leaders",
-      "time": "medium",
-	  "players": {
-		"ideal": [3, 7],
-		"possible": [2, 7]
-	  },
-	  "complexity": {
-		"rules": "medium",
-		"meta": "medium"
-	  },
       "overview": {
         "basic": "This adds 42 new cards to the base game of 7 Wonders, comprising four new guilds, one new wonder card, and 36 (+1 blank) white \"Leader\" cards. At the start of the game, each player takes a hand of four leaders and may play one at the start of each of the three Ages. Unlike the standard cards, leaders cost money (not resources). The expansion comes with a new Wonder—the ancient city of Rome—and contains 6-gold tokens made of cardboard for more efficient money-management."
       }
     },
     {
       "name": "Cities",
-      "time": "medium",
-	  "players": {
-		"ideal": [3, 7],
-		"possible": [2, 7]
-	  },
-	  "complexity": {
-		"rules": "medium",
-		"meta": "medium"
-	  },
       "overview": {
         "basic": "This includes optional team rules, a new type of card (black, representing the remains of cities), and new cards of old types (two new wonders: Petras and Byzantium, 3 new guild and 6 new leader cards). This expansion is more aggressive, with greatly increased interaction between players, who are still trying to score more points than anyone else."
       }
     },
     {
       "name": "Wonder Pack",
-      "time": "medium",
-	  "players": {
-		"ideal": [3, 7],
-		"possible": [2, 7]
-	  },
-	  "complexity": {
-		"rules": "medium",
-		"meta": "medium"
-	  },
       "overview": {
         "basic": "This includes new wonders for use with the 7 Wonders base game, with the wonders in question being: The Great Wall of China, Stonehenge, Abu Simbel and Manneken Pis."
       }
     },
     {
       "name": "Babel",
-      "time": "medium",
-	  "players": {
-		"ideal": [3, 7],
-		"possible": [2, 7]
-	  },
-	  "complexity": {
-		"rules": "medium",
-		"meta": "medium"
-	  },
       "overview": {
         "basic": "This includes two modules for use with the 7 Wonders base game, and they can be used individually or together in any combination with other expansions.\n All civilizations have turned their gaze to the horizon, where the majestic Tower of Babel is slowly being erected towards the heavens. Each player may decide to support this Wonder or not by taking part in its construction and by financing prestigious, related projects."
       }

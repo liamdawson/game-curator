@@ -1,15 +1,24 @@
 {
-  "name": "Splendor",
-  "time": "medium",
-  "players": {
-    "ideal": [3, 4],
-    "possible": [2, 4]
-  },
-  "complexity": {
-    "rules": "low",
-    "meta": "medium"
-  },
-  "overview": {
-    "basic": "You are a merchant of the Renaissance, trying to secure gem mines, means of transportation, and shops, in order to impress nobles, and develop the most prestige.\nAs you buy developments, they count as currency to further your efforts — will you start small and build fast, or take a slower approach, but go for the valuable developments first? Either way, keep an eye out for your rivals, lest they prevent you from having a splendid time."
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Splendor",
+    "time": 3,
+    "players": {
+      "ideal": [
+        3,
+        4
+      ],
+      "possible": [
+        2,
+        4
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "You are a merchant of the Renaissance, trying to secure gem mines, means of transportation, and shops, in order to impress nobles, and develop the most prestige.\nAs you buy developments, they count as currency to further your efforts — will you start small and build fast, or take a slower approach, but go for the valuable developments first? Either way, keep an eye out for your rivals, lest they prevent you from having a splendid time."
+    }
   }
 }

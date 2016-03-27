@@ -1,15 +1,20 @@
 {
-  "name": "Munchkin",
-  "time": "medium",
-  "players": {
-    "ideal": [3, 6],
-    "possible": [3, 6]
-  },
-  "complexity": {
-    "rules": "low",
-    "meta": "low"
-  },
-  "overview": {
-    "basic": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run.\n Admit it. You love it. \n This award-winning card game, designed by Steve Jackson, captures the essence of the dungeon experience... with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm... or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon..."
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Munchkin",
+    "time": 3,
+    "players": {
+      "possible": [
+        3,
+        6
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 2
+    },
+    "overview": {
+      "basic": "Go down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run.\n Admit it. You love it. \n This award-winning card game, designed by Steve Jackson, captures the essence of the dungeon experience... with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm... or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon..."
+    }
   }
 }

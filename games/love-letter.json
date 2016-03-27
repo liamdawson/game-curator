@@ -1,15 +1,24 @@
 {
-  "name": "Love Letter",
-  "time": "very short",
-  "players": {
-    "ideal": [3, 4],
-    "possible": [2, 4]
-  },
-  "complexity": {
-    "rules": "low",
-    "meta": "medium"
-  },
-  "overview": {
-    "basic": "In the wake of the arrest of Queen Marianna for high treason, suitors throughout the City-State of Tempest seek to ease Princess Annette's sorrow by courting her. Enlist the aid of the 15 ladies and gentlemen of the royal court, passing it from person to person until it reaches the Princess herself!\nEach player holds a secret card, and on their turn, draws another, choosing to discard one and play its effect. Be quick, though, because once the cards are exhausted, only the letter closest to the Princess will be read!"
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Love Letter",
+    "time": 1,
+    "players": {
+      "ideal": [
+        3,
+        4
+      ],
+      "possible": [
+        2,
+        4
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "In the wake of the arrest of Queen Marianna for high treason, suitors throughout the City-State of Tempest seek to ease Princess Annette's sorrow by courting her. Enlist the aid of the 15 ladies and gentlemen of the royal court, passing it from person to person until it reaches the Princess herself!\nEach player holds a secret card, and on their turn, draws another, choosing to discard one and play its effect. Be quick, though, because once the cards are exhausted, only the letter closest to the Princess will be read!"
+    }
   }
 }

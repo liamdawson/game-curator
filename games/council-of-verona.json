@@ -1,15 +1,24 @@
 {
-  "name": "Council of Verona",
-  "time": "medium",
-  "players": {
-    "ideal": [3, 4],
-    "possible": [2, 5]
-  },
-  "complexity": {
-    "rules": "low",
-    "meta": "high"
-  },
-  "overview": {
-    "basic": "The citizens of Verona have grown tired of the constant quarrel between the houses of Capulet and Montague. As ruler of the region, Prince Escalus has formed a council to help mediate the conflict and bring lasting peace to Verona.\nPlay as some of the influential citizens of Verona, and use your influence to add characters to the council, or commit them to exile. Careful hand management and thoughtful bidding (of influence) will lead you to victory. Will Romeo and Juliet find solace in each other's arms, or will they be forever separated by the vicious feud?"
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Council of Verona",
+    "time": 3,
+    "players": {
+      "ideal": [
+        3,
+        4
+      ],
+      "possible": [
+        2,
+        5
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "The citizens of Verona have grown tired of the constant quarrel between the houses of Capulet and Montague. As ruler of the region, Prince Escalus has formed a council to help mediate the conflict and bring lasting peace to Verona.\nPlay as some of the influential citizens of Verona, and use your influence to add characters to the council, or commit them to exile. Careful hand management and thoughtful bidding (of influence) will lead you to victory. Will Romeo and Juliet find solace in each other's arms, or will they be forever separated by the vicious feud?"
+    }
   }
 }

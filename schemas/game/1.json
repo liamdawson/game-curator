@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://www.liamdawson.me/schemas/game-curator-game/1.json",
+  "definitions": {
+    "game": {
+      "allOf": [{"$ref": "#/definitions/expansion"}],
+      "required": ["name", "time", "players", "difficulty"]
+    },
+    "expansion": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "time": { "type": "integer", "multipleOf": 1.0, "minimum": 1, "maximum": 5 },
+        "players": {
+          "type": "object",
+          "properties": {
+            "possible": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "multipleOf": 1.0,
+                "minimum": 1
+              },
+              "minItems": 2,
+              "maxItems": 2
+              },
+            "ideal": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "multipleOf": 1.0,
+                "minimum": 1
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "additionalProperties": false,
+          "required": ["possible"]
+        },
+        "difficulty": {
+          "type": "object",
+          "properties": {
+            "rules": { "type": "integer", "multipleOf": 1.0, "minimum": 1, "maximum": 5},
+            "strategy": { "type": "integer", "multipleOf": 1.0, "minimum": 1, "maximum": 5}
+          },
+          "additionalProperties": false,
+          "required": ["rules", "strategy"]
+        },
+        "overview": {
+          "type": "object",
+          "properties": {
+            "basic": { "type": "string" }
+          },
+          "additionalProperties": false,
+          "required": ["basic"]
+        }
+      },
+      "additionalProperties": false,
+      "required": ["name", "overview"]
+    }
+  },
+
+  "type": "object",
+
+  "properties": {
+    "gameSchemaVersion": { "type": "integer", "multipleOf": 1.0, "minimum": 1 },
+    "game": { "$ref": "#/definitions/game" },
+    "expansions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/expansion"
+      }
+    },
+    "additionalProperties": false
+  },
+  "required": ["gameSchemaVersion", "game"]
+}

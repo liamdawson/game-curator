@@ -1,15 +1,24 @@
 {
-  "name": "Concept",
-  "time": "medium",
-  "players": {
-    "ideal": [6, 12],
-    "possible": [4, 12]
-  },
-  "complexity": {
-    "rules": "low",
-    "meta": "medium"
-  },
-  "overview": {
-    "basic": "In Concept, your goal is to guess words through the association of icons. A team of two players – neighbors at the table – choose a word or phrase that the other players need to guess. Acting together, this team places pieces judiciously on the available icons on the game board. \n To get others to guess \"milk\", for example, the team might place the question mark icon on the liquid icon, then cubes of this color on the icons for \"food/drink\" and \"white\". The first player to discover the word or phrase receives 2 victory points, the team receives points as well, and the player who ends up with the most points wins."
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Concept",
+    "time": 3,
+    "players": {
+      "ideal": [
+        6,
+        12
+      ],
+      "possible": [
+        4,
+        12
+      ]
+    },
+    "difficulty": {
+      "rules": 2,
+      "strategy": 3
+    },
+    "overview": {
+      "basic": "In Concept, your goal is to guess words through the association of icons. A team of two players – neighbors at the table – choose a word or phrase that the other players need to guess. Acting together, this team places pieces judiciously on the available icons on the game board. \n To get others to guess \"milk\", for example, the team might place the question mark icon on the liquid icon, then cubes of this color on the icons for \"food/drink\" and \"white\". The first player to discover the word or phrase receives 2 victory points, the team receives points as well, and the player who ends up with the most points wins."
+    }
   }
 }

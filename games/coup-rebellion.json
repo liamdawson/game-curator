@@ -1,15 +1,20 @@
 {
-  "name": "Coup: Rebellion G54",
-  "time": "short",
-  "players": {
-    "ideal": [3, 6],
-    "possible": [3, 6]
-  },
-  "complexity": {
-    "rules": "medium",
-    "meta": "high"
-  },
-  "overview": {
-    "basic": "Set in a corrupt, futuristic world, your goal is to exile your enemies while retaining your own influence. A set of 5 of the 25 character types is dealt at random, ensuring each game is different. Your goal is to expose the cards of other players, until you alone hold a secret card.\nEach player receives two cards, each a character with certain abilities. You can claim to take any action, however, and it will always succeed... unless someone challenges you. Think fast and outmanoeuvre your opponents, or you'll find yourself watching from the sidelines of history."
+  "gameSchemaVersion": 1,
+  "game": {
+    "name": "Coup: Rebellion G54",
+    "time": 2,
+    "players": {
+      "possible": [
+        3,
+        6
+      ]
+    },
+    "difficulty": {
+      "rules": 3,
+      "strategy": 4
+    },
+    "overview": {
+      "basic": "Set in a corrupt, futuristic world, your goal is to exile your enemies while retaining your own influence. A set of 5 of the 25 character types is dealt at random, ensuring each game is different. Your goal is to expose the cards of other players, until you alone hold a secret card.\nEach player receives two cards, each a character with certain abilities. You can claim to take any action, however, and it will always succeed... unless someone challenges you. Think fast and outmanoeuvre your opponents, or you'll find yourself watching from the sidelines of history."
+    }
   }
 }
