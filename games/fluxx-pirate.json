@@ -1,15 +1,18 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Fluxx — Pirate Edition",
-  "time": "medium",
+  "time": 3,
   "players": {
     "ideal": [4, 5],
     "possible": [2, 6]
   },
-  "complexity": {
-    "rules": "medium",
-    "meta": "low"
+  "difficulty": {
+    "rules": 3,
+    "strategy": 2
   },
   "overview": {
     "basic": "For pirates, the code is more what you'd call 'guidelines' than actual rules. Pirate Fluxx starts simple — draw a card, play a card. The cards, however, change the rules, take dastardly actions, and even change the way you win!\n Can you find victory on the ever-changing tides? Prepare your best (or worst!) pirate accent, and find out who's the captain of this ship... for now."
   }
+}
 }

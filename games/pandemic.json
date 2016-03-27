@@ -1,28 +1,23 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Pandemic",
-  "time": "long",
+  "time": 4,
   "players": {
-    "ideal": [2, 4],
     "possible": [2, 4]
   },
-  "complexity": {
-    "rules": "medium",
-    "meta": "medium"
+  "difficulty": {
+    "rules": 3,
+    "strategy": 3
   },
   "overview": {
     "basic": "Can you save humanity in this cooperative game where deadly viruses are spreading across the globe? Together, you will treat diseases, share knowledge, and fly all over the world to prevent outbreaks and slow down the epidemic. The fate of humanity is in your hands!"
-  },
+  }},
   "expansions": [
     {
       "name": "On the Brink",
-      "time": "long",
       "players": {
-        "ideal": [2, 5],
         "possible": [2, 5]
-      },
-      "complexity": {
-        "rules": "medium",
-        "meta": "medium"
       },
       "overview": {
         "basic": "Has saving humanity become routine? Spice Pandemic up with new roles and events. Add a fifth player, try Legendary difficulty, or add an optional challenge: What if one disease is particularly nasty? Or, if a fifth disease is wreaking havoc? Or, even worse, if that fifth disease is being spread by a hidden Bio-Terrorist? Can your team work together to cure diseases in a world on the brink of disaster?"
@@ -30,14 +25,8 @@
     },
     {
       "name": "In the Lab",
-      "time": "long",
       "players": {
-        "ideal": [1, 6],
         "possible": [1, 6]
-      },
-      "complexity": {
-        "rules": "medium",
-        "meta": "medium"
       },
       "overview": {
         "basic": "Behind sealed bio-hazard doors, scientists race against time to sequence diseases and test cures. Take samples and develop cures in the Lab challenge! Play on your own or as rival teams (for 4 or 6 players)! Extend the On the Brink challenges with new Virulent Strain Events or the Worldwide Panic Mutation scenario. Can your team work together in the lab to save humanity?"
@@ -45,15 +34,6 @@
     },
     {
       "name": "State of Emergency",
-      "time": "long",
-      "players": {
-        "ideal": [2, 4],
-        "possible": [2, 4]
-      },
-      "complexity": {
-        "rules": "medium",
-        "meta": "medium"
-      },
       "overview": {
         "basic": "Three new challenges await you in this new expansion for Pandemic: The Hinterlands Challenge: the diseases are spreading from animals to humans... The Emergency Events Challenge: unpredictable Events have nasty effects on the game…try to use Quarantines to stop the spread of disease across the board... The Superbug Challenge: a fifth disease that cannot be treated threatens the world! Produce vaccine doses after finding its cure in order to fight off this threat. You must eradicate the superbug disease to win. This expansion is NOT for the faint of heart..."
       }

@@ -1,15 +1,17 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Pictomania",
-  "time": "short",
+  "time": 2,
   "players": {
-  	"ideal": [3, 6],
     "possible": [3, 6]
   },
-  "complexity": {
-    "rules": "low",
-    "meta": "medium"
+  "difficulty": {
+    "rules": 2,
+    "strategy": 3
   },
   "overview": {
     "basic": "In Pictomania each player is assigned a word to draw. Your goal is to guess the other players’ words while drawing your own. That’s right: Everyone is drawing and guessing simultaneously! No one has time to draw a complex masterpiece. The player who can sketch the essence of a word with a few lines will have more time to figure out the other players’ drawings.\n The simple scoring system rewards you for a drawing that is easy to guess as well as for guesses made quickly and accurately. But regardless of your score, you are certain to get a laugh out of your fellow players’ drawings..."
   }
+}
 }

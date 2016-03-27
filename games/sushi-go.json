@@ -1,15 +1,18 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Sushi Go!",
-  "time": "medium",
+  "time": 3,
   "players": {
     "ideal": [3, 5],
     "possible": [2, 5]
   },
-  "complexity": {
-    "rules": "low",
-    "meta": "low"
+  "difficulty": {
+    "rules": 2,
+    "strategy": 2
   },
   "overview": {
     "basic": "There are two important steps to having the best meal at the sushi train — combine the best dishes, and make sure no-one gets a better collection than you! Everyone takes a piece of sushi and passes their hand to the next person, so think carefully before you make your move, because you might just give your opponent what they need..."
   }
+}
 }

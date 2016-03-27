@@ -1,15 +1,17 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Spyrium",
-  "time": "long",
+  "time": 4,
   "players": {
-    "ideal": [2, 5],
     "possible": [2, 5]
   },
-  "complexity": {
-    "rules": "medium",
-    "meta": "high"
+  "difficulty": {
+    "rules": 3,
+    "strategy": 4
   },
   "overview": {
     "basic": "England, set in a steampunk-based universe. The discovery of a resource named \"Spyrium\" has revolutionized the industrial world. As the head of an industrial congolomerate, recruit wisely, build and improve your facilities, and patent techniques under the noses and eyes of your rivals.\nAdapt to changing times, employ your workers to take advantage of the available options, and then cash in to reap your rewards. Be clever, though — act too early, and you'll barely scrape by, act too late, and your rivals will beat you to the punch!"
   }
+}
 }

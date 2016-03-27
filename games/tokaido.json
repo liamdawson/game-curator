@@ -1,30 +1,23 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "Tokaido",
-  "time": "long",
+  "time": 4,
   "players": {
     "ideal": [3, 5],
     "possible": [2, 5]
   },
-  "complexity": {
-    "rules": "medium",
-    "meta": "medium"
+  "difficulty": {
+    "rules": 3,
+    "strategy": 3
   },
   "overview": {
     "basic": "You are a traveler crossing the \"East sea road\", one of the most magnificent roads of Japan. While traveling, you will meet people, taste fine meals, collect beautiful items, discover great panoramas, and visit temples and wild places. Your goal is to have the best holiday: discover the most interesting and varied things. Of course, to have the best holiday, you need to make sure nobody else can have a better one!\nAdvance over a linear track, stopping at temples, villages, hot springs, banks, scenic points, or encounter interesting people on the road. Be thoughtful, however, for the last traveller is first to move — race ahead, and you could find yourself watching from the sidelines..."
-  },
+  }},
   "expansions": [{
     "name": "Crossroads",
-    "time": "long",
-    "players": {
-      "ideal": [3, 5],
-      "possible": [2, 5]
-    },
-    "complexity": {
-      "rules": "medium",
-      "meta": "medium"
-    },
     "overview": {
-      "basic": "There's now more than ever to encounter along the short of Japan: encounter cherry blossoms in bloom, discover clandestine gambling houses, buy mystic charms and more, as each stop along the way now has another activity for you to undertake!"
+      "basic": "There's now more than ever to encounter along the \"East sea road\" of Japan: encounter cherry blossoms in bloom, discover clandestine gambling houses, buy mystic charms and more, as each stop along the way now has another activity for you to undertake!"
     }
   }]
 }

@@ -1,44 +1,28 @@
 {
+  "gameSchemaVersion": 1,
+  "game": {
   "name": "King of Tokyo",
-  "time": "short",
+  "time": 2,
   "players": {
     "ideal": [4, 5],
     "possible": [2, 6]
   },
-  "complexity": {
-    "rules": "low",
-    "meta": "low"
+  "difficulty": {
+    "rules": 2,
+    "strategy": 2
   },
   "overview": {
     "basic": "In King of Tokyo, you play mutant monsters, gigantic robots, and strange aliens—all of whom are destroying Tokyo and whacking each other in order to become the one and only King of Tokyo. \n The fiercest player will occupy Tokyo, and earn extra victory points, but that player can't heal and must face all the other monsters alone! In order to win the game, one must either destroy Tokyo by accumulating 20 victory points, or be the only surviving monster once the fighting has ended."
-  },
+  }},
   "expansions": [
     {
       "name": "Power Up!",
-      "time": "short",
-      "players": {
-        "ideal": [4, 5],
-        "possible": [2, 6]
-      },
-      "complexity": {
-        "rules": "low",
-        "meta": "low"
-      },
       "overview": {
         "basic": "Includes the new monster Pandakai, a giant panda bear. After choosing a monster, each player takes the eight Evolution cards associated with that monster, shuffles those cards, and creates a personal deck. A player can reveal and play an Evolution card at any time."
       }
     },
     {
       "name": "Halloween",
-      "time": "short",
-      "players": {
-        "ideal": [4, 5],
-        "possible": [2, 6]
-      },
-      "complexity": {
-        "rules": "low",
-        "meta": "low"
-      },
       "overview": {
         "basic": "Includes two new monsters for use with the King of Tokyo base game: Pumpkin Jack and Boogey Woogey. What's more, each monster comes with its own set of eight Evolution cards so that each monster can mutate into an even more nightmarish version of itself!\n King of Tokyo: Halloween also includes twelve new Power cards to be shuffled into the deck. These cards are all Costumes, a new type of card that provides a powerful effect, but which can be stolen by any monster that rolls three claws and rips the costume off of you."
       }
