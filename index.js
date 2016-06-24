@@ -4,7 +4,7 @@
  */
 
 // we want font-awesome to load as soon as possible to show the fa-spinner
-import './styles/styles.css';
+import './styles/style.scss';
 import 'font-awesome/css/font-awesome.css';
 
 // comment out if you don't want a Promise polyfill (remove also from config/webpack.common.js)

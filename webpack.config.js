@@ -59,6 +59,14 @@ const baseConfig = {
   },
   output: {
     path: outDir,
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      }
+    ]
   }
 }
 
@@ -71,7 +79,7 @@ switch (ENV) {
 
       require('@easy-webpack/config-env-production')
         ({compress: true}),
-        
+
       require('@easy-webpack/config-aurelia')
         ({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
 
@@ -92,7 +100,7 @@ switch (ENV) {
         ({debug: false})
     );
     break;
-  
+
   case 'test':
     config = generateConfig(
       baseConfig,
@@ -116,7 +124,7 @@ switch (ENV) {
       require('@easy-webpack/config-generate-index-html')()
     );
     break;
-  
+
   default:
   case 'development':
     process.env.NODE_ENV = 'development';
@@ -149,7 +157,7 @@ if (ELECTRON) {
     config,
     { entry: ['./index', './src/main'] },
     require('@easy-webpack/config-electron')(),
-    ELECTRON == 'main' ? 
+    ELECTRON == 'main' ?
       require('@easy-webpack/config-electron-main')() : require('@easy-webpack/config-electron-renderer')()
   );
 }
