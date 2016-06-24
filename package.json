@@ -1,0 +1,28 @@
+{
+  "name": "game-curator",
+  "version": "2.0.0",
+  "description": "Exhibit your games in style.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamdawson/game-curator.git"
+  },
+  "author": "Liam Dawson <liam@liamdawson.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamdawson/game-curator/issues"
+  },
+  "homepage": "https://github.com/liamdawson/game-curator#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
