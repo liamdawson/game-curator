@@ -60,11 +60,20 @@ const baseConfig = {
   output: {
     path: outDir,
   },
+  resolveLoader: {
+    alias: {
+      "yaml-loader": path.join(__dirname, "./lib/game-loader.js")
+    }
+  },
   module: {
     loaders: [
       {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.yml/,
+        loaders: ["json", "yaml-loader"]
       }
     ]
   }

@@ -1,0 +1,48 @@
+---
+game_curator_schema: 2
+---
+title: 7 Wonders
+abstract: >
+          Trade and fight with your neighbours to build the greatest city of the
+          ancient world.
+time: 3
+players:
+  ideal:
+    min: 3
+    max: 7
+  possible:
+    min: 2
+    max: 7
+difficulty:
+  strategy: 3
+  rules: 3
+---
+As the leader of one of the grandest cities of the ancient world, you are called
+upon to bring your city to greatness. Trade and fight with your neighbours,
+construct your wonder, improve your city—all to build the greatest city of the
+ancient world.
+---
+title: Leaders
+---
+New guilds, the ancient city of Rome, and many leaders await you in your quest
+for greatness. Their assistance will not come cheap, however…
+---
+title: Cities
+players:
+  possible:
+    max: 8
+---
+Explore the darker side of cities with a new series of black cards, two new
+wonders, new guilds and leaders. Greatness need not be achieved alone,however—a
+new set of rules allows for 2-player teams.
+---
+title: Wonder Pack
+---
+Introduces *The Great Wall of China*, *Stonehenge*, *Abu Simbel* and
+*Manneken Pis*.
+---
+title: Babel
+---
+The majestic *Tower of Babel* reaches to the skies. Will you join in the
+development of this grand wonder, and fund the
+new—civilization-spanning—projects of each new age?
