@@ -1,3 +1,9 @@
 <template>
-  This page will handle selection of games.
+  <div class="container">
+    <h1>Curate Collection</h1>
+    <ul class="game-curation">
+      <li repeat.for="game of games"><label><input type="checkbox" model.bind="game" checked.bind="$parent.selectedGames"> ${game.title}</label></li>
+    </ul>
+    <button class="btn btn-primary" click.delegate="generateCuration()">Curate</button>
+  </div>
 </template>

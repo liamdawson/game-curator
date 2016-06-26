@@ -78,6 +78,10 @@ const baseConfig = {
       {
         test: /\.yml/,
         loaders: ["json", "game-loader"]
+      },
+      {
+        test: /\.hbs/,
+        loader: "handlebars-loader"
       }
     ]
   }
