@@ -1,0 +1,14 @@
+<template>
+  <require from="./classes/value-converters/game-format.js"></require>
+  <ai-dialog>
+    <ai-dialog-body>
+      <h2>Generated Game Document</h2>
+      <pre class="pre-scrollable">${game | gameFormat}</pre>
+    </ai-dialog-body>
+
+    <ai-dialog-footer>
+      <!-- <button click.trigger="controller.cancel()">Cancel</button> -->
+      <button click.trigger="controller.ok()">Ok</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>

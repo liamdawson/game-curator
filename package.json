@@ -56,6 +56,7 @@
   },
   "dependencies": {
     "aurelia-bootstrapper-webpack": "^1.0.0-rc.1.0.0",
+    "aurelia-dialog": "^1.0.0-beta.1.1.0",
     "aurelia-event-aggregator": "^1.0.0-rc.1.0.0",
     "aurelia-fetch-client": "^1.0.0-rc.1.0.0",
     "aurelia-framework": "^1.0.0-rc.1.0.0",
@@ -74,7 +75,9 @@
     "font-awesome": "^4.6.3",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.0.0",
-    "marked": "^0.3.5"
+    "marked": "^0.3.5",
+    "word-wrap": "^1.1.0",
+    "yamljs": "^0.2.8"
   },
   "devDependencies": {
     "@easy-webpack/config-aurelia": "^2.0.1",
@@ -120,9 +123,8 @@
     "sass-loader": "^3.2.1",
     "typings": "^1.3.0",
     "wait-on": "^1.5.2",
-    "webpack": "^>=2.1.0-beta.13 || ^2.1.0",
-    "webpack-dev-server": ">=2.1.0-beta.0 || ^2.1.0",
-    "yamljs": "^0.2.8"
+    "webpack": "^2.1.0-beta.14",
+    "webpack-dev-server": "^2.1.0-beta.0"
   },
   "babel": {
     "presets": [

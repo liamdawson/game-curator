@@ -1,3 +1,100 @@
 <template>
-  This page will handle creation of new game entries.
+  <div class="container">
+    <h1>Add a Game</h1>
+    <form class="game-form" submit.delegate="saveGame()">
+      <div class="row">
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label for="game-title">Game Title</label>
+            <div class="content">
+              <input id="game-title" type="text" class="form-control" placeholder="7 Wonders" value.bind="game.title" required maxlength="50">
+              <p class="field-help">Official title for the game</p>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Players (Ideal)</label>
+            <div class="content">
+              <div class="row">
+                <div class="col-xs-6">
+                  <input class="form-control" type="number" required min="1" value.bind="game.players.ideal.min">
+                  <p class="field-help">Min</p>
+                </div>
+                <div class="col-xs-6">
+                  <input class="form-control" type="number" min="1" value.bind="game.players.ideal.max">
+                  <p class="field-help">Max (empty for no limit)</p>
+                </div>
+              </div>
+          </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Players (Possible)</label>
+              <div class="content">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <input class="form-control" type="number" required min="1" value.bind="game.players.possible.min">
+                    <p class="field-help">Min</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <input class="form-control" type="number" min="1" value.bind="game.players.possible.max">
+                    <p class="field-help">Max (empty for no limit)</p>
+                  </div>
+                </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="game-title">Abstract</label>
+            <div class="content">
+            <textarea id="game-abstract" required maxlength="100" rows="2" class="form-control" value.bind="game.abstract" placeholder="Trade and fight with your neighbours to build the greatest city of the ancient world."></textarea>
+          </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="game-description">Description</label>
+            <div class="content">
+            <textarea id="game-description" required maxlength="500" rows="4" class="form-control" value.bind="game.description" placeholder="Fuller description of the game - *markdown* is supported."></textarea>
+          </div>
+          </fieldset>
+        </div>
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label>Playtime</label>
+            <div class="content">
+            <div class="numeric-scale">
+              <label repeat.for="val of numericScale" class="${$parent.game.time == val ? 'active' : ''}">
+                <input type="radio" name="time" value.bind="val" checked.bind="$parent.game.time">
+                ${val}
+              </label>
+            </div>
+              <p class="field-help">1&ndash;5, where 1 is 10 minutes, 5 is 3+ hours</p>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Strategy</label>
+            <div class="content">
+            <div class="numeric-scale">
+              <label repeat.for="val of numericScale" class="${$parent.game.difficulty.strategy == val ? 'active' : ''}">
+                <input type="radio" name="strategy" value.bind="val" checked.bind="$parent.game.difficulty.strategy">
+                ${val}
+              </label>
+            </div>
+              <p class="field-help">1&ndash;5, 5 is most strategic</p>
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <label>Rule Complexity</label>
+            <div class="content">
+            <div class="numeric-scale">
+              <label repeat.for="val of numericScale" class="${$parent.game.difficulty.rules == val ? 'active' : ''}">
+                <input type="radio" name="rules" value.bind="val" checked.bind="$parent.game.difficulty.rules">
+                ${val}
+              </label>
+            </div>
+              <p class="field-help">1&ndash;5, 5 is most complex</p>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Generate File</button>
+    </form>
+  </div>
+
 </template>

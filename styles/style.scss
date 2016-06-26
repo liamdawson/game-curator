@@ -1,1 +1,39 @@
 @import "~bootstrap/scss/bootstrap.scss";
+
+.field-help {
+  @extend small;
+  @extend .text-muted;
+}
+
+form.game-form {
+  .form-group {
+    @extend .row;
+
+    &>label {
+      @extend .col-md-4;
+      text-align: right;
+      padding-top: 0.8ex;
+    }
+
+    div.content {
+      @extend .col-md-8;
+    }
+  }
+}
+
+div.numeric-scale {
+  display: flex;
+
+  &>label {
+    @extend .radio-inline;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1ex 0 1ex 1.25em;
+    // padding: 1ex 0;
+
+    &.active {
+      background: #eef;
+    }
+  }
+}
