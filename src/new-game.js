@@ -15,20 +15,20 @@ export class NewGame {
     this.game = {
       title: "",
       abstract: "",
-      time: 3,
+      time: '3',
       players: {
         ideal: {
-          min: 3,
-          max: 7
+          min: '3',
+          max: '7'
         },
         possible: {
-          min: 2,
-          max: 7
+          min: '2',
+          max: '7'
         }
       },
       difficulty: {
-        strategy: 3,
-        rules: 3
+        strategy: '3',
+        rules: '3'
       },
       description: ""
     };

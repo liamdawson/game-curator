@@ -22,6 +22,6 @@ export class GameFormatValueConverter {
       + YAML.stringify(meta, 2, 2)
       + "---\n"
       + YAML.stringify(game, 2, 2)
-      + "\n---\n" + wrap(desc, wrapOptions);
+      + "---\n" + wrap(desc, wrapOptions);
   }
 }
