@@ -2,15 +2,14 @@
 game_curator_schema: 2
 ---
 title: '7 Wonders'
-abstract: "Trade and fight with your neighbours to build the greatest city of the ancient world.\n"
-time: 3
+abstract: "Trade and fight with your neighbours to build the greatest city of the ancient world."
+time: '3'
 players:
-  ideal: {min: 3, max: 7}
-  possible: {min: 2, max: 7}
+  ideal: {min: '3', max: '7'}
+  possible: {min: '2', max: '7'}
 difficulty:
-  strategy: 3
-  rules: 3
-
+  strategy: '3'
+  rules: '3'
 ---
 As the leader of one of the grandest cities of the ancient world, you are called
 upon to bring your city to greatness. Trade and fight with your neighbours,
