@@ -1,4 +1,6 @@
 <template>
+  <require from="./classes/value-converters/markdown-format.js"></require>
+
   <div class="container">
     <h1>Add a Game</h1>
     <form class="game-form" submit.delegate="saveGame()">
@@ -51,6 +53,8 @@
             <label for="game-description">Description</label>
             <div class="content">
             <textarea id="game-description" required maxlength="500" rows="4" class="form-control" value.bind="game.description" placeholder="Fuller description of the game - *markdown* is supported."></textarea>
+            <div class="markdown-preview" innerhtml.bind="game.description | markdownFormat">
+            </div>
           </div>
           </fieldset>
         </div>
