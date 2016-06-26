@@ -63,7 +63,7 @@ const baseConfig = {
   },
   resolveLoader: {
     alias: {
-      "yaml-loader": path.join(__dirname, "./lib/game-loader.js")
+      "game-loader": path.join(__dirname, "./lib/game-loader.js")
     }
   },
   node: {
@@ -77,7 +77,7 @@ const baseConfig = {
       },
       {
         test: /\.yml/,
-        loaders: ["json", "yaml-loader"]
+        loaders: ["json", "game-loader"]
       }
     ]
   }

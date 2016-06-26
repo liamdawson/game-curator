@@ -73,6 +73,7 @@
     "bluebird": "^3.4.1",
     "bootstrap": "^4.0.0-alpha.2",
     "font-awesome": "^4.6.3",
+    "html-entities": "^1.2.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.0.0",
     "marked": "^0.3.5",
