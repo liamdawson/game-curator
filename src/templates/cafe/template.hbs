@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Curation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Lora:700" rel="stylesheet">
+  <style>
+    {{{style}}}
+  </style>
+</head>
+<body>
+  <div class="body-container">
+    {{#each games}}
+    <div class="game">
+      <h2>{{title}}</h2>
+      <div class="detail">
+        <div class="iconography">
+          <div><i class="pre-stars fa fa-users"></i>{{players.ideal.min}}&ndash;{{players.ideal.max}}</div>
+          <div><i class="pre-stars fa fa-clock-o"></i>{{stars time}}</div>
+          <div><i class="pre-stars fa fa-book"></i>{{stars difficulty.rules}}</div>
+          <div><i class="pre-stars fa fa-puzzle-piece"></i>{{stars difficulty.strategy}}</div>
+        </div>
+        <p class="abstract">{{abstract}}</p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</body>
+</html>

@@ -9,6 +9,6 @@ export class Curate {
 
   generateCuration() {
     var page = window.open("about:blank");
-    page.document.write(templates.raw({games: this.selectedGames}));
+    page.document.write(templates.cafe({games: this.selectedGames}));
   }
 }

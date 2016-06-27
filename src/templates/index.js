@@ -1,4 +1,4 @@
-var req = require.context('./', true, /template\.hbs$/i);
+var req = require.context('./', true, /template\.js$/i);
 
 module.exports = {};
 
