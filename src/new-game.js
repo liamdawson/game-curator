@@ -1,4 +1,3 @@
-import {GenerateGame} from './generate-game';
 import {DialogService} from 'aurelia-dialog';
 
 export class NewGame {
@@ -11,7 +10,7 @@ export class NewGame {
   constructor(dialogService) {
     this.dialogService = dialogService;
 
-    this.numericScale = [1,2,3,4,5];
+    this.numericScale = [1, 2, 3, 4, 5];
     this.game = {
       title: "",
       abstract: "",
@@ -35,8 +34,9 @@ export class NewGame {
   }
 
   saveGame() {
-    this.dialogService.open({ viewModel: 'generate-game', model: this.game}).then(response => {
-      console.log(response);
+    this.dialogService.open({
+      viewModel: 'generate-game',
+      model: this.game
     });
   }
 }

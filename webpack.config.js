@@ -50,7 +50,7 @@ const coreBundles = {
     'aurelia-templating-router',
     'aurelia-templating-resources'
   ]
-}
+};
 
 const baseConfig = {
   entry: {
@@ -59,7 +59,7 @@ const baseConfig = {
     'aurelia': coreBundles.aurelia.filter(pkg => coreBundles.bootstrap.indexOf(pkg) === -1)
   },
   output: {
-    path: outDir,
+    path: outDir
   },
   resolveLoader: {
     alias: {
@@ -85,7 +85,7 @@ const baseConfig = {
       }
     ]
   }
-}
+};
 
 // advanced configuration:
 
@@ -94,27 +94,22 @@ switch (ENV) {
     config = generateConfig(
       baseConfig,
 
-      require('@easy-webpack/config-env-production')
-        ({compress: true}),
+      require('@easy-webpack/config-env-production')({compress: true}),
 
-      require('@easy-webpack/config-aurelia')
-        ({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
+      require('@easy-webpack/config-aurelia')({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
 
       require('@easy-webpack/config-babel')(),
       require('@easy-webpack/config-html')(),
 
-      require('@easy-webpack/config-css')
-        ({ filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false }),
+      require('@easy-webpack/config-css')({filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false}),
 
       require('@easy-webpack/config-fonts-and-images')(),
       require('@easy-webpack/config-global-bluebird')(),
       require('@easy-webpack/config-global-jquery')(),
       require('@easy-webpack/config-global-regenerator')(),
-      require('@easy-webpack/config-generate-index-html')
-        ({minify: true}),
+      require('@easy-webpack/config-generate-index-html')({minify: true}),
 
-      require('@easy-webpack/config-uglify')
-        ({debug: false})
+      require('@easy-webpack/config-uglify')({debug: false})
     );
     break;
 
@@ -122,17 +117,14 @@ switch (ENV) {
     config = generateConfig(
       baseConfig,
 
-      require('@easy-webpack/config-env-development')
-        ({devtool: 'inline-source-map'}),
+      require('@easy-webpack/config-env-development')({devtool: 'inline-source-map'}),
 
-      require('@easy-webpack/config-aurelia')
-        ({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
+      require('@easy-webpack/config-aurelia')({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
 
       require('@easy-webpack/config-babel')(),
       require('@easy-webpack/config-html')(),
 
-      require('@easy-webpack/config-css')
-        ({ filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false }),
+      require('@easy-webpack/config-css')({filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false}),
 
       require('@easy-webpack/config-fonts-and-images')(),
       require('@easy-webpack/config-global-bluebird')(),
@@ -150,21 +142,18 @@ switch (ENV) {
 
       require('@easy-webpack/config-env-development')(),
 
-      require('@easy-webpack/config-aurelia')
-        ({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
+      require('@easy-webpack/config-aurelia')({root: rootDir, src: srcDir, title: title, baseUrl: baseUrl}),
 
       require('@easy-webpack/config-babel')(),
       require('@easy-webpack/config-html')(),
 
-      require('@easy-webpack/config-css')
-        ({ filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false }),
+      require('@easy-webpack/config-css')({filename: 'styles.css', allChunks: !!ELECTRON, sourceMap: false}),
 
       require('@easy-webpack/config-fonts-and-images')(),
       require('@easy-webpack/config-global-bluebird')(),
       require('@easy-webpack/config-global-jquery')(),
       require('@easy-webpack/config-global-regenerator')(),
-      require('@easy-webpack/config-generate-index-html')
-        ({minify: false})
+      require('@easy-webpack/config-generate-index-html')({minify: false})
     );
     break;
 }
@@ -172,7 +161,7 @@ switch (ENV) {
 if (ELECTRON) {
   config = generateConfig(
     config,
-    { entry: ['./index', './src/main'] },
+    {entry: ['./index', './src/main']},
     require('@easy-webpack/config-electron')(),
     ELECTRON == 'main' ?
       require('@easy-webpack/config-electron-main')() : require('@easy-webpack/config-electron-renderer')()
@@ -182,8 +171,7 @@ if (ELECTRON) {
 if (ENV !== 'test' && !ELECTRON) {
   config = generateConfig(
     config,
-    require('@easy-webpack/config-common-chunks-simple')
-      ({appChunkName: 'app', firstChunk: 'aurelia-bootstrap'})
+    require('@easy-webpack/config-common-chunks-simple')({appChunkName: 'app', firstChunk: 'aurelia-bootstrap'})
   );
 }
 

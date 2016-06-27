@@ -10,11 +10,11 @@ import 'font-awesome/css/font-awesome.css';
 // comment out if you don't want a Promise polyfill (remove also from config/webpack.common.js)
 import * as Bluebird from 'bluebird';
 Bluebird.config({
-  //// Enable long stack traces
+  // // Enable long stack traces
   // longStackTraces: true,
-  //// Enable cancellation
+  // // Enable cancellation
   // cancellation: true,
-  //// Enable monitoring
+  // // Enable monitoring
   // monitoring: true,
   // Enable warnings
   warnings: false

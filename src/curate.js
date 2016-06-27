@@ -1,3 +1,5 @@
+/* globals window */
+
 import games from './games';
 import templates from './templates';
 

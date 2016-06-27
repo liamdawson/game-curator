@@ -8,8 +8,9 @@ export class GameFormatValueConverter {
       indent: ''
     };
     const meta = {
+      // eslint-disable-next-line camelcase
       game_curator_schema: 2
-    }
+    };
 
     let game = Object.assign({}, value);
     game.abstract = game.abstract.trim();
@@ -18,10 +19,10 @@ export class GameFormatValueConverter {
     delete game.description;
     delete game.description_html;
 
-    return "---\n"
-      + YAML.stringify(meta, 2, 2)
-      + "---\n"
-      + YAML.stringify(game, 2, 2)
-      + "---\n" + wrap(desc, wrapOptions);
+    return "---\n" +
+      YAML.stringify(meta, 2, 2) +
+      "---\n" +
+      YAML.stringify(game, 2, 2) +
+      "---\n" + wrap(desc, wrapOptions);
   }
 }

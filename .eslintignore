@@ -1,0 +1,5 @@
+node_modules/
+typings/
+# Remove when testing is in place
+test/
+webpack.config.js
