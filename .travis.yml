@@ -1,7 +1,9 @@
 language: node_js
 node_js:
 - node
-script: ./bin/build-release.sh
+script:
+- npm run-script prepr
+- ./bin/build-release.sh
 deploy:
   provider: releases
   api_key:
@@ -13,7 +15,4 @@ after_deploy:
 - ./deploy-ghp.sh
 env:
   global:
-    GH_REF: "github.com/game-curator/game-curator"
-    GIT_NAME: "Liam Dawson"
-    GIT_EMAIL: "liam@liamdawson.me"
     secure: iwsuY4KTDJXOz5gyJltmaCsJbGK4dKg/pJXKTvM1D65Euu2iiiXreiM6z4zU66JvDIqQlclofoqwZgm6xTzRQJ+aFe1vxz/RAuOa44yEbuoQR0SPQyCNhWynLEKanUoTJtuQVmYtbLC7AIc96KTJmvmVXM7Sf0/FOXgHk2T9AcUnvebGhrxGPGIqOCkaESyN+BKPllwHAsqfwIshWcPvJDi7CsuGT12V/7ahNNXv0xTCfWHq7Zeku7ewKWY3qwbk9Cnp+bsAcYPmvc46ybG6hw7WH5hP800pEGNvtCXX+XdcpC2xp+c+vbFf3QFKEJ5zqbSn3M2BDRqQROuhOW+cg2JTcHmB7WVwSEd6ZmdFOjrD4E0ppFh7pW/NVkPr9SM/caDpNfS+yTP3/23MRfELYnI2ziI3YLK4a/8G1Dq1jnaeGFb5y0q6NpfkuvjjrBDenhkhE5X3oC9gHqHK60IuRYlq2/kc0pyL5iaXZMK8AxWez1kSaAk/RIaCJkraW4izBQcsIZpbeWIwd1ALt+JZT9a8VTmkHjvJ6ZF+2RfD0qKRKI9QKlomZdZwh5MAwIgQIZDxXDKfPD72+9SqWJVUGlYCGlv5PkVWIxC5rqaslTpl1B9yVrgdDp7NAmHgmVDM4sp5gnjPtwwz7MbSt7VjyM1tSBCe4kzwIk09pRZ1UTs=

@@ -1,4 +1,5 @@
 node_modules/
+dist/
 typings/
 # Remove when testing is in place
 test/
