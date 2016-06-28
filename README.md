@@ -1,3 +1,7 @@
+[![GitHub tag](https://img.shields.io/github/tag/game-curator/game-curator.svg?maxAge=2592000?style=flat-square)](https://github.com/game-curator/game-curator/releases)
+[![Travis branch](https://img.shields.io/travis/game-curator/game-curator/dev.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/game-curator/game-curator)
+[![license](https://img.shields.io/github/license/game-curator/game-curator.svg?maxAge=2592000?style=flat-square)]()
+
 Game Curator
 ============
 
