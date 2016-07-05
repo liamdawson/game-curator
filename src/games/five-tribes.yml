@@ -1,13 +1,15 @@
 ---
 game_curator_schema: 3
 ---
-title: 'Five Tribes'
+title: Five Tribes
 other_titles:
-- 'Five Tribes: The Djinns of Naqala'
-- 'Five Tribes: Die Dschinn von Nagala'
-- 'Five Tribes: I Geni di Naqala'
-- 'Five Tribes: Les Djinns de Naqala'
-abstract: 'In the sultanate of Naqala, control is up for grabs! Lead the people and djinn, fulfil the prophecy.'
+  - 'Five Tribes: The Djinns of Naqala'
+  - 'Five Tribes: Die Dschinn von Nagala'
+  - 'Five Tribes: I Geni di Naqala'
+  - 'Five Tribes: Les Djinns de Naqala'
+abstract: >-
+  In the sultanate of Naqala, control is up for grabs! Lead the people and
+  djinn, fulfil the prophecy.
 time: '3'
 players:
   ideal: {min: '3', max: '4'}
@@ -17,8 +19,6 @@ difficulty:
   rules: '4'
 bgg:
   id: '157354'
-  url: https://boardgamegeek.com/boardgame/157354/five-tribes
+  url: 'https://boardgamegeek.com/boardgame/157354/five-tribes'
 ---
-In Naqala, the Sultan has died, and his position is up for grabs. Become the
-stranger of prophecy, and manoeuvre the Five Tribes and Djinns to make this
-Sultanate---in all its *A Thousand and One Nights* themed splendor---yours.
+In Naqala, the Sultan has died, and his position is up for grabs. Become the stranger of prophecy, and manoeuvre the Five Tribes and Djinns to make this Sultanate---in all its *A Thousand and One Nights* themed splendor---yours.

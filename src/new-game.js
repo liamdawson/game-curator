@@ -1,14 +1,18 @@
 import {DialogService} from 'aurelia-dialog';
+import games from './games';
 
 export class NewGame {
   static inject = [DialogService];
 
+  games;
   game;
   numericScale;
   dialogService;
+  selectedExistingGame;
 
   constructor(dialogService) {
     this.dialogService = dialogService;
+    this.games = games;
 
     this.numericScale = [1, 2, 3, 4, 5];
     this.game = {
@@ -31,6 +35,10 @@ export class NewGame {
       },
       description: ""
     };
+  }
+
+  loadExisting() {
+    this.game = {...this.selectedExistingGame};
   }
 
   saveGame() {

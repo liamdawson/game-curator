@@ -1,8 +1,10 @@
 ---
-game_curator_schema: 2
+game_curator_schema: 3
 ---
 title: Alchemists
-abstract: 'Race to deduce the properties of mystical ingredients for profit. Or better: reputation.'
+abstract: >-
+  Race to deduce the properties of mystical ingredients for profit. Or better:
+  reputation.
 time: '5'
 players:
   ideal: {min: '3', max: '4'}
@@ -10,8 +12,8 @@ players:
 difficulty:
   strategy: '5'
   rules: '4'
+bgg:
+  id: '161970'
+  url: 'https://boardgamegeek.com/boardgame/161970/alchemists'
 ---
-As a budding alchemist, all you have a lab, and a handful of ingredients.
-Ingratiate yourself with the townsfolk, test your concoctions on adventurers,
-students---or yourself, if you dare---and publish theories for the ultimate
-reward: reputation!
+As a budding alchemist, all you have a lab, and a handful of ingredients. Ingratiate yourself with the townsfolk, test your concoctions on adventurers, students---or yourself, if you dare---and publish theories for the ultimate reward: reputation!

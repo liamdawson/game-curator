@@ -3,6 +3,16 @@
 
   <div class="container">
     <h1>Add a Game</h1>
+    <div class="form-inline">
+      <select class="form-control" value.bind="selectedExistingGame">
+        <option>Load an existing game...</option>
+        <option repeat.for="existingGame of games" model.bind="existingGame">
+          ${existingGame.title}
+        </option>
+      </select>
+      <button click.delegate="loadExisting()">Load</button>
+    </div>
+    <hr>
     <form class="game-form" submit.delegate="saveGame()">
       <div class="row">
         <div class="col-md-6">

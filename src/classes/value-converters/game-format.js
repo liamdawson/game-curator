@@ -1,32 +1,46 @@
 import YAML from 'js-yaml';
-import wrap from 'word-wrap';
+
+const yamlOptions = {
+  indent: 2,
+  flowLevel: 2
+};
 
 export class GameFormatValueConverter {
+
   toView(value) {
-    const wrapOptions = {
-      width: 80,
-      indent: ''
+    let fromMetaAndDesc = (meta, desc) => {
+      return "---\n" +
+        YAML.safeDump(meta, yamlOptions) +
+        "---\n" +
+        desc;
     };
-    const yamlOptions = {
-      indent: 2,
-      flowLevel: 2
+    let fromGameObj = inputGame => {
+      let game = {
+        ...inputGame,
+        abstract: inputGame.abstract.trim()
+      };
+      let desc = game.description.trim();
+
+      delete game.description;
+      delete game.descriptionHtml;
+      delete game.schemaVersion;
+
+      return fromMetaAndDesc(game, desc);
     };
+
     const meta = {
       // eslint-disable-next-line camelcase
-      game_curator_schema: 2
+      game_curator_schema: 3
     };
 
-    let game = Object.assign({}, value);
-    game.abstract = game.abstract.trim();
-    let desc = game.description.trim();
-
-    delete game.description;
-    delete game.description_html;
+    let game = {...value};
+    let expansions = game.expansions || [];
+    delete game.expansions;
 
     return "---\n" +
-      YAML.safeDump(meta, yamlOptions) +
-      "---\n" +
-      YAML.safeDump(game, yamlOptions) +
-      "---\n" + wrap(desc, wrapOptions);
+      YAML.safeDump(meta) +
+      [game].concat(expansions)
+        .map(fromGameObj)
+        .join("\n");
   }
 }

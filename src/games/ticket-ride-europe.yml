@@ -1,0 +1,21 @@
+---
+game_curator_schema: 3
+---
+title: 'Ticket to Ride: Europe'
+abstract: >-
+  Fulfil tickets, connecting Europe by land and sea, become the biggest name in
+  travel.
+time: '4'
+players:
+  ideal: {min: '2', max: '5'}
+  possible: {min: '2', max: '5'}
+difficulty:
+  strategy: '3'
+  rules: '2'
+bgg:
+  id: '14996'
+  url: 'https://boardgamegeek.com/boardgame/14996/ticket-ride-europe'
+---
+Turn of the century Europe---connect the biggest cities by land and sea, fulfilling tickets by joining destinations.
+
+Be expansive, bold, decisive. Most of all, be clever---every unfilled ticket will count against you!
