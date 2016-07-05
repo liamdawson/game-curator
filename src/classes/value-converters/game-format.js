@@ -1,4 +1,4 @@
-import YAML from 'yamljs';
+import YAML from 'js-yaml';
 import wrap from 'word-wrap';
 
 export class GameFormatValueConverter {
@@ -6,6 +6,10 @@ export class GameFormatValueConverter {
     const wrapOptions = {
       width: 80,
       indent: ''
+    };
+    const yamlOptions = {
+      indent: 2,
+      flowLevel: 2
     };
     const meta = {
       // eslint-disable-next-line camelcase
@@ -20,9 +24,9 @@ export class GameFormatValueConverter {
     delete game.description_html;
 
     return "---\n" +
-      YAML.stringify(meta, 2, 2) +
+      YAML.safeDump(meta, yamlOptions) +
       "---\n" +
-      YAML.stringify(game, 2, 2) +
+      YAML.safeDump(game, yamlOptions) +
       "---\n" + wrap(desc, wrapOptions);
   }
 }

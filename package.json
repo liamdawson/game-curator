@@ -78,10 +78,10 @@
     "html-entities": "^1.2.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.0.0",
+    "js-yaml": "^3.6.1",
     "marked": "^0.3.5",
     "to-string-loader": "^1.1.4",
-    "word-wrap": "^1.1.0",
-    "yamljs": "^0.2.8"
+    "word-wrap": "^1.1.0"
   },
   "devDependencies": {
     "@easy-webpack/config-aurelia": "^2.0.1",
