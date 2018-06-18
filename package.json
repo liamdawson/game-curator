@@ -1,0 +1,38 @@
+{
+  "name": "game-curator",
+  "version": "3.0.0-alpha1",
+  "private": false,
+  "license": "(MIT OR Apache-2.0)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/game-curator/game-curator.git"
+  },
+  "dependencies": {
+    "html-entities": "^1.2.1",
+    "marked": "^0.4.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts-ts": "2.16.0",
+    "yamljs": "^0.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.0",
+    "@types/node": "^10.3.3",
+    "@types/react": "^16.3.18",
+    "@types/react-dom": "^16.0.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+---
+game_curator_schema: 2
+---
+title: 'Five Tribes: The Djinns of Naqala'
+abstract: 'In the sultanate of Naqala, control is up for grabs! Lead the people and djinn, fulfil the prophecy.'
+time: '3'
+players:
+  ideal: {min: '3', max: '4'}
+  possible: {min: 2, max: '4'}
+difficulty:
+  strategy: '4'
+  rules: '4'
+---
+In Naqala, the Sultan has died, and his position is up for grabs. Become the
+stranger of prophecy, and manoeuvre the Five Tribes and Djinns to make this
+Sultanate---in all its *A Thousand and One Nights* themed splendor---yours.

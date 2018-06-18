@@ -1,0 +1,1 @@
+Dual licenced under [Apache 2.0](LICENCE-APACHE) OR [MIT](LICENCE-MIT).

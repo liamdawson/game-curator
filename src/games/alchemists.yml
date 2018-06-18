@@ -1,0 +1,17 @@
+---
+game_curator_schema: 2
+---
+title: Alchemists
+abstract: 'Race to deduce the properties of mystical ingredients for profit. Or better: reputation.'
+time: '5'
+players:
+  ideal: {min: '3', max: '4'}
+  possible: {min: '2', max: '4'}
+difficulty:
+  strategy: '5'
+  rules: '4'
+---
+As a budding alchemist, all you have a lab, and a handful of ingredients.
+Ingratiate yourself with the townsfolk, test your concoctions on adventurers,
+students---or yourself, if you dare---and publish theories for the ultimate
+reward: reputation!
