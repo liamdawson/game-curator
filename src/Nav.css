@@ -1,0 +1,37 @@
+nav {
+  padding: 2ex 1em 1ex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin: 0 0.75em 0 0;
+  letter-spacing: -0.05em;
+}
+
+nav a {
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  padding: 1.5ex 1em;
+  color: inherit;
+}
+
+nav a:hover {
+  color: #777;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  border: 2px solid #555;
+  margin: 0.25em 0.25em 0;
+  transform: scaleX(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+nav a:hover::after, nav a.active::after {
+  transform: scaleX(1);
+}
