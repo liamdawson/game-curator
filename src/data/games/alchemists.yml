@@ -1,6 +1,6 @@
+game_curator_schema: 3
 ---
-game_curator_schema: 2
----
+id: 161970
 title: Alchemists
 abstract: 'Race to deduce the properties of mystical ingredients for profit. Or better: reputation.'
 time: '5'

@@ -1,7 +1,8 @@
+game_curator_schema: 3
 ---
-game_curator_schema: 2
----
+id: 157354
 title: 'Five Tribes: The Djinns of Naqala'
+aka: ['Five Tribes']
 abstract: 'In the sultanate of Naqala, control is up for grabs! Lead the people and djinn, fulfil the prophecy.'
 time: '3'
 players:

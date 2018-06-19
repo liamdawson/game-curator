@@ -1,5 +1,5 @@
-let marked = require('marked');
-let Entities = require('html-entities').AllHtmlEntities;
+const { AllHtmlEntities } = require('html-entities');
+const marked = require('marked');
 
 marked.setOptions({
   breaks: false, // probably won't work well with yaml line breaks
@@ -12,5 +12,5 @@ marked.setOptions({
 });
 
 module.exports = function(src) {
-  return (new Entities()).encodeNonASCII(marked(src));
+  return (new AllHtmlEntities()).encodeNonASCII(marked(src));
 };

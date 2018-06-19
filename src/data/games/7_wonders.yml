@@ -1,6 +1,6 @@
+game_curator_schema: 3
 ---
-game_curator_schema: 2
----
+id: 68448
 title: '7 Wonders'
 abstract: "Trade and fight with your neighbours to build the greatest city of the ancient world."
 time: '3'
