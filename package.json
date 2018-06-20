@@ -24,9 +24,15 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.7",
+    "@storybook/addon-links": "^3.4.7",
+    "@storybook/addons": "^3.4.7",
+    "@storybook/react": "^3.4.7",
     "@types/html-entities": "^1.2.16",
     "@types/jest": "^23.1.0",
     "@types/js-yaml": "^3.11.1",
@@ -37,8 +43,11 @@
     "@types/react": "^16.3.18",
     "@types/react-dom": "^16.0.6",
     "@types/react-router-dom": "^4.2.7",
+    "@types/storybook__react": "^3.0.7",
     "@types/webpack": "^4.4.1",
     "@types/webpack-env": "^1.13.6",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
     "cz-conventional-changelog": "^2.1.0",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"

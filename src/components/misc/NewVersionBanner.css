@@ -1,0 +1,22 @@
+button.update-available-banner {
+  display: block;
+  width: 100%;
+  background: #102020;
+  padding: 1ex 1em;
+  text-align: center;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.15em;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+button.update-available-banner em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+button.update-available-banner:hover {
+  background: #304040;
+}
