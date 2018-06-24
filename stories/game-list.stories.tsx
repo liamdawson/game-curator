@@ -67,6 +67,6 @@ storiesOf("Game List", module)
   ))
   .add("With games", () => (
     <div className="container" style={{ marginTop: "20px" }}>
-      <GameList onSuggestGame={action("suggest-game")} games={sampleGames} />
+      <GameList games={sampleGames} onSelectionChanged={action("selection-changed")} />
     </div>
   ));

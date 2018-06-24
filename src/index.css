@@ -20,6 +20,11 @@ button {
   border-radius: 3px;
 }
 
+button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -50,6 +55,10 @@ table tbody tr.odd td {
 table td.checkbox-cell {
   padding: 0;
   text-align: center;
+}
+
+table td.checkbox-cell input {
+  cursor: pointer;
 }
 
 table td.checkbox-cell label {
