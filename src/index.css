@@ -10,3 +10,31 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+button {
+  background-color: #333;
+  border: 1px solid #000;
+  font: inherit;
+  color: #eee;
+  padding: 1ex 1em;
+  border-radius: 3px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead th:first-child {
+  border-top-left-radius: 3px;
+}
+
+table thead th:last-child {
+  border-top-right-radius: 3px;
+}
+
+table thead th {
+  background-color: #333;
+  color: #eee;
+  padding: 0.5ex 0.5em;
+}
