@@ -38,3 +38,22 @@ table thead th {
   color: #eee;
   padding: 0.5ex 0.5em;
 }
+
+table tbody td {
+  padding: 1ex 0.25em;
+}
+
+table tbody tr.odd td {
+  background-color: #f0f0f0;
+}
+
+table td.checkbox-cell {
+  padding: 0;
+  text-align: center;
+}
+
+table td.checkbox-cell label {
+  display: block;
+  padding: 1em;
+  cursor: pointer;
+}

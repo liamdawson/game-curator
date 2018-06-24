@@ -3,7 +3,7 @@ export default interface IGame {
   title: string,
   aka?: string[],
   abstract: string,
-  time: string
+  time: number,
   players: IPlayers,
   difficulty: IDifficulty,
   description: string,

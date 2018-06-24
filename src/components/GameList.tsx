@@ -1,4 +1,5 @@
 import * as React from "react";
+import IGame from "../types/game";
 
 interface IProps {
   games?: any[];
@@ -6,10 +7,13 @@ interface IProps {
 }
 
 export default class GameList extends React.Component<IProps> {
-  protected suggestAGame = (
-    <button onClick={this.props.onSuggestGame}>
-      Missing a game? Contribute it!
-    </button>
+  protected noGamesFound = (
+    <div style={{textAlign: "center"}}>
+      <p>No games found.</p>
+      <button onClick={this.props.onSuggestGame}>
+        Missing a game? Contribute it!
+      </button>
+    </div>
   );
 
   protected get hasGames() {
@@ -22,23 +26,25 @@ export default class GameList extends React.Component<IProps> {
         <table>
           <thead>
             <tr>
-              <th colSpan={2}>Name</th>
+              <th colSpan={2}>Title</th>
             </tr>
           </thead>
           <tbody>
-            {this.hasGames ? (
-              this.props.games!.map((_, i) => <tr key={i} />)
-            ) : (
-              <tr>
-                <td colSpan={2} style={{ textAlign: "center" }}>
-                  <p>No games found.</p>
-                  <p>{this.suggestAGame}</p>
-                </td>
-              </tr>
-            )}
+            {this.hasGames
+              ? this.props.games!.map(this.gameToGameRow)
+              : this.noGamesFound}
           </tbody>
         </table>
       </div>
+    );
+  }
+
+  protected gameToGameRow(game : IGame, index: number) {
+    return (
+    <tr key={game.id} className={index % 2 === 1 ? "odd" : "even"}>
+      <td className="checkbox-cell"><label><input type="checkbox" id={`gamerow-${game.id}`}/></label></td>
+      <td>{game.title}</td>
+    </tr>
     );
   }
 }
